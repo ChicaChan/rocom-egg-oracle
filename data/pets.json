@@ -1,0 +1,1576 @@
+[
+  {
+    "id": "3008001",
+    "sourceRecordId": 7,
+    "petId": 3008001,
+    "name": "草头鸭",
+    "sizeMinM": 0.21,
+    "sizeMaxM": 0.3,
+    "weightMinKg": 1.715,
+    "weightMaxKg": 2.628,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3010001",
+    "sourceRecordId": 10,
+    "petId": 3010001,
+    "name": "恶魔叮",
+    "sizeMinM": 0.17,
+    "sizeMaxM": 0.23,
+    "weightMinKg": 1.26,
+    "weightMaxKg": 1.64,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3011001",
+    "sourceRecordId": 12,
+    "petId": 3011001,
+    "name": "恶魔狼",
+    "sizeMinM": 0.52,
+    "sizeMaxM": 0.73,
+    "weightMinKg": 25.9,
+    "weightMaxKg": 36.8,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3012001",
+    "sourceRecordId": 17,
+    "petId": 3012001,
+    "name": "鸭吉吉",
+    "sizeMinM": 0.28,
+    "sizeMaxM": 0.39,
+    "weightMinKg": 5.11,
+    "weightMaxKg": 7.04,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3014001",
+    "sourceRecordId": 19,
+    "petId": 3014001,
+    "name": "阿米亚特",
+    "sizeMinM": 0.24,
+    "sizeMaxM": 0.33,
+    "weightMinKg": 13.475,
+    "weightMaxKg": 19.68,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy",
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3017001",
+    "sourceRecordId": 20,
+    "petId": 3017001,
+    "name": "蹦蹦种子",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.28,
+    "weightMinKg": 1.505,
+    "weightMaxKg": 2.24,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3020001",
+    "sourceRecordId": 24,
+    "petId": 3020001,
+    "name": "地鼠",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.27,
+    "weightMinKg": 0.63,
+    "weightMaxKg": 0.96,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3029001",
+    "sourceRecordId": 28,
+    "petId": 3029001,
+    "name": "奇丽草",
+    "sizeMinM": 0.16,
+    "sizeMaxM": 0.23,
+    "weightMinKg": 1.435,
+    "weightMaxKg": 2.28,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3034001",
+    "sourceRecordId": 33,
+    "petId": 3034001,
+    "name": "蒲公英",
+    "sizeMinM": 0.13,
+    "sizeMaxM": 0.21,
+    "weightMinKg": 0.035,
+    "weightMaxKg": 0.12,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3038001",
+    "sourceRecordId": 35,
+    "petId": 3038001,
+    "name": "小甲虫",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.28,
+    "weightMinKg": 2.275,
+    "weightMaxKg": 3.36,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3040001",
+    "sourceRecordId": 36,
+    "petId": 3040001,
+    "name": "丢丢",
+    "sizeMinM": 0.15,
+    "sizeMaxM": 0.21,
+    "weightMinKg": 1.505,
+    "weightMaxKg": 2.44,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3043001",
+    "sourceRecordId": 37,
+    "petId": 3043001,
+    "name": "伊贝儿",
+    "sizeMinM": 0.19,
+    "sizeMaxM": 0.26,
+    "weightMinKg": 1.155,
+    "weightMaxKg": 1.68,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3045001",
+    "sourceRecordId": 38,
+    "petId": 3045001,
+    "name": "锥尾羊",
+    "sizeMinM": 0.24,
+    "sizeMaxM": 0.34,
+    "weightMinKg": 4.655,
+    "weightMaxKg": 6.6,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3049001",
+    "sourceRecordId": 39,
+    "petId": 3049001,
+    "name": "白发懒人",
+    "sizeMinM": 0.31,
+    "sizeMaxM": 0.43,
+    "weightMinKg": 6.825,
+    "weightMaxKg": 9.4,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3050001",
+    "sourceRecordId": 41,
+    "petId": 3050001,
+    "name": "记忆石",
+    "sizeMinM": 0.41,
+    "sizeMaxM": 0.58,
+    "weightMinKg": 31.57,
+    "weightMaxKg": 44.8,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3055001",
+    "sourceRecordId": 45,
+    "petId": 3055001,
+    "name": "板板壳",
+    "sizeMinM": 0.23,
+    "sizeMaxM": 0.32,
+    "weightMinKg": 2.625,
+    "weightMaxKg": 4.2,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "medium",
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3058001",
+    "sourceRecordId": 46,
+    "petId": 3058001,
+    "name": "一窝蜂",
+    "sizeMinM": 0.16,
+    "sizeMaxM": 0.22,
+    "weightMinKg": 1.4,
+    "weightMaxKg": 2.2,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3060001",
+    "sourceRecordId": 49,
+    "petId": 3060001,
+    "name": "小灵面",
+    "sizeMinM": 0.16,
+    "sizeMaxM": 0.23,
+    "weightMinKg": 0.035,
+    "weightMaxKg": 0.06,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3062001",
+    "sourceRecordId": 50,
+    "petId": 3062001,
+    "name": "小独角兽",
+    "sizeMinM": 0.42,
+    "sizeMaxM": 0.59,
+    "weightMinKg": 14.525,
+    "weightMaxKg": 22.24,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3064001",
+    "sourceRecordId": 54,
+    "petId": 3064001,
+    "name": "幽影树",
+    "sizeMinM": 0.27,
+    "sizeMaxM": 0.38,
+    "weightMinKg": 10.325,
+    "weightMaxKg": 15,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "heavy",
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3069001",
+    "sourceRecordId": 58,
+    "petId": 3069001,
+    "name": "锤头鹳",
+    "sizeMinM": 0.46,
+    "sizeMaxM": 0.65,
+    "weightMinKg": 17.955,
+    "weightMaxKg": 26.32,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3070001",
+    "sourceRecordId": 59,
+    "petId": 3070001,
+    "name": "护主犬",
+    "sizeMinM": 0.27,
+    "sizeMaxM": 0.38,
+    "weightMinKg": 4.76,
+    "weightMaxKg": 7,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3072001",
+    "sourceRecordId": 63,
+    "petId": 3072001,
+    "name": "格兰种子",
+    "sizeMinM": 0.17,
+    "sizeMaxM": 0.24,
+    "weightMinKg": 1.225,
+    "weightMaxKg": 2.16,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3075001",
+    "sourceRecordId": 65,
+    "petId": 3075001,
+    "name": "灵狐",
+    "sizeMinM": 0.24,
+    "sizeMaxM": 0.33,
+    "weightMinKg": 2.59,
+    "weightMaxKg": 3.56,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3081001",
+    "sourceRecordId": 69,
+    "petId": 3081001,
+    "name": "治愈兔",
+    "sizeMinM": 0.24,
+    "sizeMaxM": 0.34,
+    "weightMinKg": 4.211,
+    "weightMaxKg": 5.768,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3086001",
+    "sourceRecordId": 73,
+    "petId": 3086001,
+    "name": "可立鸡",
+    "sizeMinM": 0.17,
+    "sizeMaxM": 0.23,
+    "weightMinKg": 1.61,
+    "weightMaxKg": 2.96,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3090001",
+    "sourceRecordId": 74,
+    "petId": 3090001,
+    "name": "火尾瓦特",
+    "sizeMinM": 0.27,
+    "sizeMaxM": 0.38,
+    "weightMinKg": 6.475,
+    "weightMaxKg": 8.48,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3093001",
+    "sourceRecordId": 75,
+    "petId": 3093001,
+    "name": "呆小路",
+    "sizeMinM": 0.25,
+    "sizeMaxM": 0.34,
+    "weightMinKg": 1.575,
+    "weightMaxKg": 2.32,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3098001",
+    "sourceRecordId": 77,
+    "petId": 3098001,
+    "name": "绿耳松鼠",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.28,
+    "weightMinKg": 1.225,
+    "weightMaxKg": 2.4,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3103001",
+    "sourceRecordId": 78,
+    "petId": 3103001,
+    "name": "布是石",
+    "sizeMinM": 0.18,
+    "sizeMaxM": 0.25,
+    "weightMinKg": 6.475,
+    "weightMaxKg": 13,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3106001",
+    "sourceRecordId": 82,
+    "petId": 3106001,
+    "name": "石肤蜥",
+    "sizeMinM": 0.21,
+    "sizeMaxM": 0.29,
+    "weightMinKg": 7.35,
+    "weightMaxKg": 13.6,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3112001",
+    "sourceRecordId": 87,
+    "petId": 3112001,
+    "name": "甜田螺",
+    "sizeMinM": 0.17,
+    "sizeMaxM": 0.24,
+    "weightMinKg": 2.625,
+    "weightMaxKg": 3.76,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3115001",
+    "sourceRecordId": 88,
+    "petId": 3115001,
+    "name": "风铃鲨",
+    "sizeMinM": 0.17,
+    "sizeMaxM": 0.24,
+    "weightMinKg": 4.575,
+    "weightMaxKg": 6.72,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3119001",
+    "sourceRecordId": 97,
+    "petId": 3119001,
+    "name": "翡翠水母",
+    "sizeMinM": 0.21,
+    "sizeMaxM": 0.29,
+    "weightMinKg": 11.025,
+    "weightMaxKg": 14.72,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "heavy",
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3127001",
+    "sourceRecordId": 108,
+    "petId": 3127001,
+    "name": "小狮鹫",
+    "sizeMinM": 0.3,
+    "sizeMaxM": 0.42,
+    "weightMinKg": 4.025,
+    "weightMaxKg": 7,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3130001",
+    "sourceRecordId": 111,
+    "petId": 3130001,
+    "name": "圆眼蜘蛛",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.28,
+    "weightMinKg": 1.225,
+    "weightMaxKg": 2,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3136001",
+    "sourceRecordId": 113,
+    "petId": 3136001,
+    "name": "毛毛",
+    "sizeMinM": 0.13,
+    "sizeMaxM": 0.19,
+    "weightMinKg": 1.05,
+    "weightMaxKg": 1.8,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3139001",
+    "sourceRecordId": 115,
+    "petId": 3139001,
+    "name": "小草虫",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.28,
+    "weightMinKg": 0.735,
+    "weightMaxKg": 1.36,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight",
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3142001",
+    "sourceRecordId": 116,
+    "petId": 3142001,
+    "name": "小夜",
+    "sizeMinM": 0.22,
+    "sizeMaxM": 0.3,
+    "weightMinKg": 1.575,
+    "weightMaxKg": 3.04,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3145001",
+    "sourceRecordId": 119,
+    "petId": 3145001,
+    "name": "小灵菇",
+    "sizeMinM": 0.18,
+    "sizeMaxM": 0.25,
+    "weightMinKg": 1.89,
+    "weightMaxKg": 2.84,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3151001",
+    "sourceRecordId": 124,
+    "petId": 3151001,
+    "name": "多多",
+    "sizeMinM": 0.19,
+    "sizeMaxM": 0.27,
+    "weightMinKg": 5.11,
+    "weightMaxKg": 7.44,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3170001",
+    "sourceRecordId": 134,
+    "petId": 3170001,
+    "name": "石石",
+    "sizeMinM": 0.15,
+    "sizeMaxM": 0.21,
+    "weightMinKg": 21.35,
+    "weightMaxKg": 30,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3172001",
+    "sourceRecordId": 136,
+    "petId": 3172001,
+    "name": "雪豆丁",
+    "sizeMinM": 0.37,
+    "sizeMaxM": 0.51,
+    "weightMinKg": 3.325,
+    "weightMaxKg": 5,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "medium",
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3178001",
+    "sourceRecordId": 139,
+    "petId": 3178001,
+    "name": "矮脚爬爬",
+    "sizeMinM": 0.12,
+    "sizeMaxM": 0.18,
+    "weightMinKg": 1.155,
+    "weightMaxKg": 1.68,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3188001",
+    "sourceRecordId": 144,
+    "petId": 3188001,
+    "name": "拉特",
+    "sizeMinM": 0.21,
+    "sizeMaxM": 0.25,
+    "weightMinKg": 2.695,
+    "weightMaxKg": 3.44,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3190001",
+    "sourceRecordId": 147,
+    "petId": 3190001,
+    "name": "电咩咩",
+    "sizeMinM": 0.25,
+    "sizeMaxM": 0.34,
+    "weightMinKg": 2.51,
+    "weightMaxKg": 3.64,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3193001",
+    "sourceRecordId": 148,
+    "petId": 3193001,
+    "name": "小星光",
+    "sizeMinM": 0.33,
+    "sizeMaxM": 0.46,
+    "weightMinKg": 9.625,
+    "weightMaxKg": 14.48,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy",
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3195001",
+    "sourceRecordId": 150,
+    "petId": 3195001,
+    "name": "闪电环",
+    "sizeMinM": 0.16,
+    "sizeMaxM": 0.19,
+    "weightMinKg": 0.84,
+    "weightMaxKg": 1.24,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight",
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3215001",
+    "sourceRecordId": 167,
+    "petId": 3215001,
+    "name": "海豹战士",
+    "sizeMinM": 0.27,
+    "sizeMaxM": 0.38,
+    "weightMinKg": 24.325,
+    "weightMaxKg": 35.04,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3225001",
+    "sourceRecordId": 170,
+    "petId": 3225001,
+    "name": "古钟蛇",
+    "sizeMinM": 0.4,
+    "sizeMaxM": 0.46,
+    "weightMinKg": 2.415,
+    "weightMaxKg": 3.12,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3227001",
+    "sourceRecordId": 171,
+    "petId": 3227001,
+    "name": "菊花梨",
+    "sizeMinM": 0.27,
+    "sizeMaxM": 0.37,
+    "weightMinKg": 1.47,
+    "weightMaxKg": 2.32,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3237001",
+    "sourceRecordId": 177,
+    "petId": 3237001,
+    "name": "小怂猫",
+    "sizeMinM": 0.25,
+    "sizeMaxM": 0.35,
+    "weightMinKg": 6.86,
+    "weightMaxKg": 9,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3239001",
+    "sourceRecordId": 178,
+    "petId": 3239001,
+    "name": "哭哭菇",
+    "sizeMinM": 0.14,
+    "sizeMaxM": 0.2,
+    "weightMinKg": 0.63,
+    "weightMaxKg": 1.28,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight",
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3250001",
+    "sourceRecordId": 185,
+    "petId": 3250001,
+    "name": "小鹬",
+    "sizeMinM": 0.11,
+    "sizeMaxM": 0.15,
+    "weightMinKg": 0.49,
+    "weightMaxKg": 0.88,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3255001",
+    "sourceRecordId": 187,
+    "petId": 3255001,
+    "name": "奔波鼠",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.25,
+    "weightMinKg": 1.299,
+    "weightMaxKg": 2.56,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3262001",
+    "sourceRecordId": 190,
+    "petId": 3262001,
+    "name": "呼呼猪",
+    "sizeMinM": 0.22,
+    "sizeMaxM": 0.31,
+    "weightMinKg": 2.38,
+    "weightMaxKg": 3.56,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3266001",
+    "sourceRecordId": 194,
+    "petId": 3266001,
+    "name": "胆小鳗鱼",
+    "sizeMinM": 0.31,
+    "sizeMaxM": 0.44,
+    "weightMinKg": 6.125,
+    "weightMaxKg": 10.74,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3268001",
+    "sourceRecordId": 195,
+    "petId": 3268001,
+    "name": "大头骨龙",
+    "sizeMinM": 0.36,
+    "sizeMaxM": 0.42,
+    "weightMinKg": 6.51,
+    "weightMaxKg": 13.4,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3276001",
+    "sourceRecordId": 196,
+    "petId": 3276001,
+    "name": "绿翼鸟",
+    "sizeMinM": 0.21,
+    "sizeMaxM": 0.25,
+    "weightMinKg": 1.26,
+    "weightMaxKg": 1.92,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3307001",
+    "sourceRecordId": 220,
+    "petId": 3307001,
+    "name": "矿晶虫",
+    "sizeMinM": 0.23,
+    "sizeMaxM": 0.32,
+    "weightMinKg": 2.03,
+    "weightMaxKg": 2.52,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3315001",
+    "sourceRecordId": 229,
+    "petId": 3315001,
+    "name": "小鼠獭",
+    "sizeMinM": 0.16,
+    "sizeMaxM": 0.22,
+    "weightMinKg": 2.345,
+    "weightMaxKg": 3,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3330001",
+    "sourceRecordId": 234,
+    "petId": 3330001,
+    "name": "海盔虫",
+    "sizeMinM": 0.23,
+    "sizeMaxM": 0.29,
+    "weightMinKg": 2.59,
+    "weightMaxKg": 3.44,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3333001",
+    "sourceRecordId": 239,
+    "petId": 3333001,
+    "name": "雪娃娃",
+    "sizeMinM": 0.12,
+    "sizeMaxM": 0.17,
+    "weightMinKg": 2.38,
+    "weightMaxKg": 3.264,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3344001",
+    "sourceRecordId": 242,
+    "petId": 3344001,
+    "name": "乖乖鹄",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.28,
+    "weightMinKg": 1.47,
+    "weightMaxKg": 2.2,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3357001",
+    "sourceRecordId": 245,
+    "petId": 3357001,
+    "name": "电动长颈鹿",
+    "sizeMinM": 0.3,
+    "sizeMaxM": 0.42,
+    "weightMinKg": 10.43,
+    "weightMaxKg": 14.72,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy",
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3367001",
+    "sourceRecordId": 249,
+    "petId": 3367001,
+    "name": "嘟嘟煲",
+    "sizeMinM": 0.28,
+    "sizeMaxM": 0.33,
+    "weightMinKg": 16.975,
+    "weightMaxKg": 22.4,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3373001",
+    "sourceRecordId": 252,
+    "petId": 3373001,
+    "name": "逗逗",
+    "sizeMinM": 0.13,
+    "sizeMaxM": 0.17,
+    "weightMinKg": 0.21,
+    "weightMaxKg": 0.32,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3376001",
+    "sourceRecordId": 256,
+    "petId": 3376001,
+    "name": "旋叶虫",
+    "sizeMinM": 0.04,
+    "sizeMaxM": 0.06,
+    "weightMinKg": 0.053,
+    "weightMaxKg": 0.1,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3378001",
+    "sourceRecordId": 257,
+    "petId": 3378001,
+    "name": "菇菇丁",
+    "sizeMinM": 0.11,
+    "sizeMaxM": 0.15,
+    "weightMinKg": 0.385,
+    "weightMaxKg": 0.5,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3384001",
+    "sourceRecordId": 264,
+    "petId": 3384001,
+    "name": "豆丁鱼",
+    "sizeMinM": 0.13,
+    "sizeMaxM": 0.18,
+    "weightMinKg": 0.42,
+    "weightMaxKg": 0.6,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3406001",
+    "sourceRecordId": 271,
+    "petId": 3406001,
+    "name": "缇塔",
+    "sizeMinM": 0.28,
+    "sizeMaxM": 0.31,
+    "weightMinKg": 13.37,
+    "weightMaxKg": 18.08,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy",
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3410001",
+    "sourceRecordId": 274,
+    "petId": 3410001,
+    "name": "权杖-Ⅱ",
+    "sizeMinM": 0.19,
+    "sizeMaxM": 0.23,
+    "weightMinKg": 9.975,
+    "weightMaxKg": 14.28,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "heavy",
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3430001",
+    "sourceRecordId": 285,
+    "petId": 3430001,
+    "name": "海枝枝",
+    "sizeMinM": 0.32,
+    "sizeMaxM": 0.35,
+    "weightMinKg": 1.229,
+    "weightMaxKg": 2.728,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3434001",
+    "sourceRecordId": 291,
+    "petId": 3434001,
+    "name": "小电企鹅",
+    "sizeMinM": 0.19,
+    "sizeMaxM": 0.23,
+    "weightMinKg": 1.337,
+    "weightMaxKg": 2.156,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3438001",
+    "sourceRecordId": 296,
+    "petId": 3438001,
+    "name": "梦游",
+    "sizeMinM": 0.21,
+    "sizeMaxM": 0.25,
+    "weightMinKg": 0.298,
+    "weightMaxKg": 0.42,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3484001",
+    "sourceRecordId": 312,
+    "petId": 3484001,
+    "name": "螺旋帕帕",
+    "sizeMinM": 0.15,
+    "sizeMaxM": 0.19,
+    "weightMinKg": 0.728,
+    "weightMaxKg": 1.74,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight",
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3490001",
+    "sourceRecordId": 316,
+    "petId": 3490001,
+    "name": "吸泥鸥",
+    "sizeMinM": 0.23,
+    "sizeMaxM": 0.29,
+    "weightMinKg": 3.325,
+    "weightMaxKg": 5,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "medium",
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3492001",
+    "sourceRecordId": 317,
+    "petId": 3492001,
+    "name": "兽花蕾",
+    "sizeMinM": 0.16,
+    "sizeMaxM": 0.19,
+    "weightMinKg": 1.488,
+    "weightMaxKg": 2.6,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3499001",
+    "sourceRecordId": 320,
+    "petId": 3499001,
+    "name": "公平鸽",
+    "sizeMinM": 0.19,
+    "sizeMaxM": 0.25,
+    "weightMinKg": 0.875,
+    "weightMaxKg": 1.576,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "ultraLight",
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3506001",
+    "sourceRecordId": 323,
+    "petId": 3506001,
+    "name": "花怨鳗",
+    "sizeMinM": 0.25,
+    "sizeMaxM": 0.28,
+    "weightMinKg": 1.015,
+    "weightMaxKg": 1.6,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3508001",
+    "sourceRecordId": 326,
+    "petId": 3508001,
+    "name": "波波螺",
+    "sizeMinM": 0.14,
+    "sizeMaxM": 0.17,
+    "weightMinKg": 1.698,
+    "weightMaxKg": 2.26,
+    "hatchSeconds": 57600,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3521001",
+    "sourceRecordId": 329,
+    "petId": 3521001,
+    "name": "里拉鳐",
+    "sizeMinM": 0.4,
+    "sizeMaxM": 0.46,
+    "weightMinKg": 13.51,
+    "weightMaxKg": 19.8,
+    "hatchSeconds": 72000,
+    "eggWeightClasses": [
+      "heavy",
+      "ultraHeavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3529001",
+    "sourceRecordId": 332,
+    "petId": 3529001,
+    "name": "号儿鱼",
+    "sizeMinM": 0.13,
+    "sizeMaxM": 0.17,
+    "weightMinKg": 1.365,
+    "weightMaxKg": 2.1,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3533001",
+    "sourceRecordId": 336,
+    "petId": 3533001,
+    "name": "雪绒鸟",
+    "sizeMinM": 0.16,
+    "sizeMaxM": 0.21,
+    "weightMinKg": 0.97,
+    "weightMaxKg": 1.8,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight",
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3534001",
+    "sourceRecordId": 339,
+    "petId": 3534001,
+    "name": "斑斑",
+    "sizeMinM": 0.2,
+    "sizeMaxM": 0.25,
+    "weightMinKg": 1.677,
+    "weightMaxKg": 2.468,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3536001",
+    "sourceRecordId": 341,
+    "petId": 3536001,
+    "name": "乌达",
+    "sizeMinM": 0.19,
+    "sizeMaxM": 0.24,
+    "weightMinKg": 1.61,
+    "weightMaxKg": 2.44,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3550001",
+    "sourceRecordId": 347,
+    "petId": 3550001,
+    "name": "棋棋",
+    "sizeMinM": 0.15,
+    "sizeMaxM": 0.2,
+    "weightMinKg": 3.745,
+    "weightMaxKg": 5.8,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "medium",
+      "heavy"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3584001",
+    "sourceRecordId": 363,
+    "petId": 3584001,
+    "name": "刺轮砣",
+    "sizeMinM": 0.08,
+    "sizeMaxM": 0.13,
+    "weightMinKg": 0.945,
+    "weightMaxKg": 1.6,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "ultraLight",
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3618001",
+    "sourceRecordId": 377,
+    "petId": 3618001,
+    "name": "小箱怪",
+    "sizeMinM": 0.14,
+    "sizeMaxM": 0.19,
+    "weightMinKg": 1.558,
+    "weightMaxKg": 2.724,
+    "hatchSeconds": 43200,
+    "eggWeightClasses": [
+      "light",
+      "medium"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  },
+  {
+    "id": "3704001",
+    "sourceRecordId": 385,
+    "petId": 3704001,
+    "name": "优优",
+    "sizeMinM": 0.16,
+    "sizeMaxM": 0.23,
+    "weightMinKg": 1.061,
+    "weightMaxKg": 1.64,
+    "hatchSeconds": 28800,
+    "eggWeightClasses": [
+      "light"
+    ],
+    "isCurrentRandomPool": true,
+    "source": "https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json",
+    "sourceUpdatedAt": "2026-05-03T14:32:18.023Z"
+  }
+]

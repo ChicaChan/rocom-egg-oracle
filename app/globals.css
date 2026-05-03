@@ -1,0 +1,411 @@
+:root {
+  --ink: #1c241f;
+  --muted: #69756e;
+  --line: rgba(28, 36, 31, 0.12);
+  --card: rgba(255, 255, 246, 0.86);
+  --card-strong: #fffdf1;
+  --accent: #e2722d;
+  --accent-dark: #8c361a;
+  --green: #1e7c5b;
+  --sky: #cbeedb;
+  --shadow: 0 14px 42px rgba(38, 50, 35, 0.13);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family:
+    "LXGW WenKai Screen",
+    "Noto Serif SC",
+    "Microsoft YaHei",
+    serif;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 196, 87, 0.55), transparent 28rem),
+    radial-gradient(circle at 82% 8%, rgba(92, 172, 132, 0.4), transparent 26rem),
+    linear-gradient(135deg, #f8f1cb 0%, #d5ead2 48%, #f4ba75 100%);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+code {
+  border-radius: 0.4rem;
+  background: rgba(226, 114, 45, 0.12);
+  padding: 0.05rem 0.35rem;
+}
+
+.shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.hero {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding: 38px;
+  border: 1px solid var(--line);
+  border-radius: 36px;
+  background:
+    linear-gradient(120deg, rgba(255, 253, 241, 0.92), rgba(255, 253, 241, 0.5)),
+    repeating-linear-gradient(45deg, rgba(30, 124, 91, 0.07) 0 2px, transparent 2px 15px);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow,
+.sectionLabel {
+  margin: 0;
+  color: var(--accent-dark);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2.3rem, 7vw, 5.4rem);
+  line-height: 0.96;
+  letter-spacing: -0.08em;
+}
+
+.heroText {
+  max-width: 700px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.panel,
+.statCard {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  contain: layout paint;
+  content-visibility: auto;
+  contain-intrinsic-size: 360px;
+}
+
+.inputPanel {
+  display: grid;
+  gap: 22px;
+  padding: 26px;
+}
+
+.fieldGrid,
+.filterGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.fieldGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.filterGrid {
+  grid-template-columns: 1fr 0.8fr 1fr;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.field span {
+  font-size: 0.9rem;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(28, 36, 31, 0.18);
+  border-radius: 18px;
+  background: var(--card-strong);
+}
+
+.inputWrap input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 18px;
+  color: var(--ink);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.inputWrap b {
+  padding-right: 18px;
+  color: var(--accent);
+}
+
+select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid rgba(28, 36, 31, 0.18);
+  border-radius: 16px;
+  background: var(--card-strong);
+  color: var(--ink);
+  padding: 0 14px;
+  font-weight: 800;
+}
+
+.readonlyField strong {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  border: 1px solid rgba(30, 124, 91, 0.2);
+  border-radius: 16px;
+  background: rgba(203, 238, 219, 0.48);
+  color: var(--green);
+  padding: 0 14px;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.examples button {
+  border: 1px solid rgba(226, 114, 45, 0.32);
+  border-radius: 999px;
+  background: rgba(226, 114, 45, 0.12);
+  color: var(--accent-dark);
+  padding: 10px 14px;
+  font-weight: 900;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.statCard {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+}
+
+.statCard span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.statCard strong {
+  color: var(--green);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.resultsPanel,
+.notes {
+  padding: 26px;
+}
+
+.resultHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.resultHeader h2,
+.emptyState h2,
+.notes h2 {
+  margin: 6px 0 0;
+  font-size: 1.7rem;
+  letter-spacing: -0.04em;
+}
+
+.rBadge {
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fffdf1;
+  padding: 10px 14px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.statusStrip,
+.querySummary {
+  margin-bottom: 14px;
+  border-radius: 16px;
+  padding: 10px 14px;
+  font-weight: 900;
+}
+
+.statusStrip {
+  background: rgba(226, 114, 45, 0.12);
+  color: var(--accent-dark);
+}
+
+.querySummary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: rgba(203, 238, 219, 0.5);
+  color: var(--green);
+}
+
+.querySummary span {
+  border-radius: 999px;
+  background: rgba(255, 255, 246, 0.78);
+  padding: 7px 10px;
+}
+
+.candidateGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.candidateGrid.muted {
+  opacity: 0.78;
+}
+
+.candidateCard {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(28, 36, 31, 0.12);
+  border-radius: 22px;
+  background:
+    linear-gradient(145deg, rgba(255, 253, 241, 0.98), rgba(255, 253, 241, 0.82)),
+    radial-gradient(circle at top right, rgba(226, 114, 45, 0.14), transparent 42%);
+  padding: 20px;
+  content-visibility: auto;
+  contain-intrinsic-size: 210px;
+}
+
+.rank {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--sky);
+  color: var(--green);
+  font-weight: 900;
+}
+
+.candidateMain h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.candidateMain p,
+.notes p,
+.emptyState p,
+.emptyInline,
+.errorBox p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.rangeGrid {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.scoreRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.scoreRow span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.scoreRow b {
+  color: var(--accent-dark);
+}
+
+.emptyState,
+.errorBox,
+.emptyInline {
+  border-radius: 22px;
+  background: rgba(255, 253, 241, 0.72);
+  padding: 24px;
+}
+
+.errorBox {
+  border: 1px solid rgba(190, 43, 28, 0.25);
+  background: rgba(255, 231, 225, 0.72);
+}
+
+.nearbyBlock {
+  margin-top: 28px;
+}
+
+.nearbyBlock .sectionLabel {
+  margin-bottom: 12px;
+}
+
+.notes {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+@media (max-width: 760px) {
+  .shell {
+    width: min(100% - 20px, 680px);
+    padding: 18px 0;
+  }
+
+  .hero,
+  .inputPanel,
+  .resultsPanel,
+  .notes {
+    border-radius: 22px;
+    padding: 20px;
+  }
+
+  .fieldGrid,
+  .filterGrid,
+  .statsGrid,
+  .candidateGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .resultHeader {
+    display: grid;
+  }
+}
