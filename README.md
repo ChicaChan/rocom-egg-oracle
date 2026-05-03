@@ -21,8 +21,7 @@ Rocom Egg Oracle 是一个面向《洛克王国：世界》玩家的精灵蛋预
 
 ## 截图
 
-![Uploading image.png…]()
-
+![Rocom Egg Oracle prediction example](./public/screenshots/egg-prediction-example.png)
 
 ## 数据来源
 
