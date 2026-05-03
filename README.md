@@ -1,26 +1,37 @@
-# 洛克王国世界孵蛋预测工具
+# Rocom Egg Oracle
 
-一个用于“洛克王国：世界”精灵蛋反查的 Web 工具。输入精灵蛋尺寸 `m` 和重量 `kg` 后，工具会在当前随机蛋池数据中严格匹配候选精灵，并按 `R = weightKg / sizeM` 的接近程度排序。
+Rocom Egg Oracle 是一个面向《洛克王国：世界》玩家的精灵蛋预测工具。它通过玩家输入的精灵蛋尺寸和重量，在当前随机蛋池数据中反查可能孵出的精灵，并给出匹配排序和邻近参考。
 
-## 功能
+这个项目的目标不是给出“绝对概率”，而是把公开孵蛋区间数据整理成一个更易用、可验证、可自行部署的开源工具。
 
-- 输入蛋尺寸和蛋重量，预测可能孵出的精灵。
-- 严格命中：尺寸与重量必须同时落入候选精灵区间。
-- 邻近参考：无严格命中时展示数值最接近的参考候选，并明确标记为参考。
+## 项目特性
+
+- 输入蛋尺寸和蛋重量，快速反查可能孵出的精灵。
+- 严格命中模式：尺寸和重量必须同时落入候选精灵区间。
+- 邻近参考模式：无严格命中时，展示数值最接近的参考候选。
+- 使用 `R = weightKg / sizeM` 对命中候选排序，帮助缩小判断范围。
 - 显示蛋重量分组：超轻蛋、轻蛋、中等蛋、重蛋、超重蛋。
 - 支持孵化时间筛选和 Top N 结果数量控制。
-- 使用 `useDeferredValue`、`useMemo`、渲染隔离和静态数据，降低输入卡顿与内存占用。
-- 提供 Docker Compose、systemd、Nginx 部署模板。
+- 默认只导入当前随机蛋池记录，避免把底层全量配置误当作可孵池。
+- 可本地运行，也可通过 Docker、systemd、Nginx 部署到 Linux 服务器。
+
+## 在线演示
+
+暂未配置公开演示站点。部署完成后可以把地址补充在这里。
+
+## 截图
+
+暂未添加截图。建议后续补充首页输入区、严格命中结果、邻近参考结果 3 张截图。
 
 ## 数据来源
 
-项目默认使用 RocomUID 公开孵蛋配置，并只导入带 `random_eggs_group` 的当前随机蛋池记录。不要把底层全量配置直接当作当前可孵精灵池。
-
-数据源：
+项目使用 RocomUID 公开孵蛋配置作为数据来源：
 
 ```text
 https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/breeding.json
 ```
+
+注意：本项目默认只导入带 `random_eggs_group` 的当前随机蛋池记录，不会直接导入底层全量配置。
 
 更新数据：
 
@@ -28,18 +39,24 @@ https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/bree
 npm run data:update
 ```
 
-## 算法
+## 匹配逻辑
 
-严格结果必须同时满足：
+严格命中必须同时满足：
 
 ```text
 sizeMinM <= 输入尺寸 <= sizeMaxM
 weightMinKg <= 输入重量 <= weightMaxKg
 ```
 
-命中后按 `R = weightKg / sizeM` 与候选区间中心 R 值的差距排序。邻近参考只表示数值接近，不代表可孵出。
+命中后，候选会按输入蛋的 `R` 值与候选区间中心 `R` 值的差距排序：
 
-蛋重量分组：
+```text
+R = weightKg / sizeM
+```
+
+邻近参考只表示数值接近，不代表一定可以孵出。
+
+## 蛋重量分组
 
 ```text
 0 - 1 kg       超轻蛋
@@ -49,18 +66,26 @@ weightMinKg <= 输入重量 <= weightMaxKg
 14 kg 以上     超重蛋
 ```
 
-候选精灵如果重量区间跨越多个阈值，会显示多个覆盖分组。
+如果候选精灵的重量区间跨越多个阈值，页面会显示多个覆盖分组。
 
-## 本地开发
+## 技术栈
+
+- Next.js
+- React
+- TypeScript
+- Vitest
+- Docker / Docker Compose
+
+## 快速开始
 
 要求：
 
-- Node.js `22`
+- Node.js 22
 - npm
 
-安装与启动：
-
 ```bash
+git clone https://github.com/ChicaChan/rocom-egg-oracle.git
+cd rocom-egg-oracle
 npm ci
 npm run data:update
 npm run dev
@@ -72,93 +97,71 @@ npm run dev
 http://127.0.0.1:3000
 ```
 
-质量检查：
+## 常用命令
 
 ```bash
-npm run lint
-npm run test
-npm run build
+npm run dev          # 本地开发
+npm run data:update  # 更新孵蛋数据
+npm run lint         # TypeScript 类型检查
+npm run test         # 单元测试
+npm run build        # 生产构建
+npm run ci           # 完整验证流程
 ```
 
-完整 CI 流程：
+## 部署
+
+详细部署说明见 [DEPLOYMENT.md](./DEPLOYMENT.md)。
+
+Docker Compose 快速部署：
+
+```bash
+git clone https://github.com/ChicaChan/rocom-egg-oracle.git /opt/rocom-egg-oracle
+cd /opt/rocom-egg-oracle
+docker compose up -d --build
+curl http://127.0.0.1:3000/api/health
+```
+
+原生 systemd 部署：
+
+```bash
+REPO_URL=https://github.com/ChicaChan/rocom-egg-oracle.git sudo -E bash scripts/linux-install.sh
+```
+
+## 项目结构
+
+```text
+app/                  Next.js 页面和 API
+data/                 转换后的孵蛋数据
+src/lib/              类型定义和预测算法
+scripts/              数据更新与部署脚本
+deploy/               systemd 和 Nginx 模板
+test/                 单元测试
+```
+
+## 贡献
+
+欢迎提交 Issue 或 Pull Request。
+
+适合贡献的方向：
+
+- 修正或补充孵蛋数据。
+- 改进匹配排序算法。
+- 增加截图、在线演示或使用文档。
+- 优化移动端交互体验。
+- 增加更多测试样例。
+
+提交前请运行：
 
 ```bash
 npm run ci
 ```
 
-## GitHub 上传
+## 免责声明
 
-```bash
-git remote add origin https://github.com/<user>/<repo>.git
-git branch -M main
-git push -u origin main
-```
+本项目为玩家社区工具，结果仅供参考。活动池、游戏版本更新、数据源变更都可能影响实际孵化结果。
 
-项目已包含 GitHub Actions：
+项目代码以 MIT License 发布。外部数据、游戏名称、精灵名称及相关素材归各自来源和权利方所有。
 
-```text
-.github/workflows/ci.yml
-```
+## License
 
-每次推送到 `main` 或 PR 到 `main` 会自动执行数据更新、类型检查、测试和构建。
-
-## Linux 部署
-
-详细步骤见：
-
-```text
-DEPLOYMENT.md
-```
-
-推荐 Docker Compose：
-
-```bash
-git clone https://github.com/<user>/<repo>.git /opt/rocom-egg-predictor
-cd /opt/rocom-egg-predictor
-docker compose up -d --build
-curl http://127.0.0.1:3000/api/health
-```
-
-原生 systemd：
-
-```bash
-REPO_URL=https://github.com/<user>/<repo>.git sudo -E bash scripts/linux-install.sh
-```
-
-## 生产配置
-
-`.env.example`：
-
-```text
-HOSTNAME=0.0.0.0
-PORT=3000
-NODE_ENV=production
-```
-
-Docker 和 systemd 默认设置：
-
-```text
-NODE_OPTIONS=--max-old-space-size=256
-NEXT_TELEMETRY_DISABLED=1
-```
-
-## 健康检查
-
-```bash
-curl http://127.0.0.1:3000/api/health
-```
-
-返回：
-
-```json
-{
-  "ok": true,
-  "service": "rocom-egg-predictor"
-}
-```
-
-## 说明
-
-结果仅供参考。活动池、游戏版本更新或数据源变更都可能影响实际结果。
-
-代码以 MIT License 发布；外部数据与游戏相关内容归各自来源和权利方所有。
+[MIT](./LICENSE)
