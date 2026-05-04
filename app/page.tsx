@@ -4,7 +4,6 @@ import petsData from "@/data/pets.json";
 import {
   formatHatchTime,
   getEggWeightClassLabel,
-  getEggWeightClassLabels,
   predictEgg,
 } from "@/src/lib/predict";
 import type { EggWeightClass, PetEggRange, PredictCandidate } from "@/src/lib/types";
@@ -467,9 +466,7 @@ function CandidateList({
           />
           <div className="petInfo">
             <span className="petName">{candidate.pet.name}</span>
-            <span className="petMeta">
-              {getEggWeightClassLabels(candidate.pet.eggWeightClasses)} · {formatHatchTime(candidate.pet.hatchSeconds)}
-            </span>
+            <span className="petMeta">{formatHatchTime(candidate.pet.hatchSeconds)}</span>
           </div>
           <div className="ranges">
             <span>尺寸 {candidate.pet.sizeMinM}–{candidate.pet.sizeMaxM} m</span>
