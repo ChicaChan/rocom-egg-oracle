@@ -4,11 +4,14 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "洛克王国世界孵蛋预测工具 | Rocom Egg Oracle",
   description: "输入精灵蛋尺寸和重量，反查可能孵出的洛克王国世界精灵。基于公开孵蛋区间数据，支持严格匹配与 R 值排序。",
+  metadataBase: new URL("https://rocom.eu.cc"),
   robots: "index, follow",
+  alternates: { canonical: "https://rocom.eu.cc" },
   openGraph: {
     title: "洛克王国世界孵蛋预测工具",
     description: "输入精灵蛋尺寸和重量，反查可能孵出的精灵。",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 

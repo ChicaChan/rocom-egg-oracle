@@ -327,6 +327,94 @@ select:hover {
   opacity: 0.3;
 }
 
+/* ── Share ── */
+
+.shareBtn {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
+  transition: all 0.15s;
+}
+
+.shareBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* ── Freshness Banner ── */
+
+.freshnessBanner {
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: #fffbeb;
+  color: #d97706;
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.freshnessBannerStale {
+  background: var(--red-light);
+  color: var(--red);
+}
+
+/* ── Search ── */
+
+.searchRow {
+  margin-bottom: 14px;
+}
+
+.searchInput {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fafafa;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.searchInput:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
+}
+
+.searchInput::placeholder {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ── Toast ── */
+
+.toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(16px);
+  border-radius: 10px;
+  background: var(--ink);
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s;
+  z-index: 100;
+}
+
+.toastVisible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 /* ── Status ── */
 
 .statusStrip {

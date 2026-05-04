@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
@@ -103,7 +103,13 @@ async function fetchJsonWithRetry(url) {
     await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
   }
 
-  throw lastError;
+  console.warn("所有数据源不可用，回退到本地缓存数据");
+  try {
+    const cache = JSON.parse(await readFile(OUTPUT_FILE, "utf8"));
+    return { pet_egg_conf: cache };
+  } catch {
+    throw lastError;
+  }
 }
 
 function getEggWeightClass(weightKg) {
