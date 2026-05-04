@@ -459,6 +459,12 @@ function CandidateList({
       {filtered.map((candidate, index) => (
         <article className="candidateCard" key={`${candidate.pet.id}-${index}`}>
           <div className="rank">{index + 1}</div>
+          <img
+            className="petImg"
+            src={`/api/pet-image?name=${encodeURIComponent(candidate.pet.name)}`}
+            alt={candidate.pet.name}
+            loading="lazy"
+          />
           <div className="petInfo">
             <span className="petName">{candidate.pet.name}</span>
             <span className="petMeta">
