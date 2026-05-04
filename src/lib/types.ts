@@ -21,6 +21,7 @@ export type PredictInput = {
   weightKg: number;
   topN?: number;
   hatchSeconds?: number | "all";
+  eggWeightClass?: EggWeightClass | "all";
 };
 
 export type PredictCandidate = {

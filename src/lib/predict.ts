@@ -140,6 +140,14 @@ function filterByOptions(pets: PetEggRange[], input: PredictInput): PetEggRange[
       return false;
     }
 
+    if (
+      input.eggWeightClass &&
+      input.eggWeightClass !== "all" &&
+      !pet.eggWeightClasses.includes(input.eggWeightClass)
+    ) {
+      return false;
+    }
+
     return true;
   });
 }

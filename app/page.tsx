@@ -7,7 +7,7 @@ import {
   getEggWeightClassLabels,
   predictEgg,
 } from "@/src/lib/predict";
-import type { PetEggRange, PredictCandidate } from "@/src/lib/types";
+import type { EggWeightClass, PetEggRange, PredictCandidate } from "@/src/lib/types";
 import { useRouter, useSearchParams } from "next/navigation";
 import {
   startTransition,
@@ -55,6 +55,11 @@ function HomeContent() {
     return 12;
   });
   const [searchQuery, setSearchQuery] = useState("");
+  const [weightClass, setWeightClass] = useState<EggWeightClass | "all">(() => {
+    const wc = searchParams.get("class");
+    if (wc && ["ultraLight", "light", "medium", "heavy", "ultraHeavy"].includes(wc)) return wc as EggWeightClass;
+    return "all";
+  });
 
   const deferredSizeM = useDeferredValue(sizeM);
   const deferredWeightKg = useDeferredValue(weightKg);
@@ -82,11 +87,12 @@ function HomeContent() {
       if (weightKg) params.set("weight", weightKg);
       if (hatchSeconds !== "all") params.set("hatch", String(hatchSeconds));
       if (topN !== 12) params.set("top", String(topN));
+      if (weightClass !== "all") params.set("class", weightClass);
       const qs = params.toString();
       router.replace(qs ? `?${qs}` : window.location.pathname, { scroll: false });
     }, 300);
     return () => clearTimeout(debounceRef.current);
-  }, [sizeM, weightKg, hatchSeconds, topN, router]);
+  }, [sizeM, weightKg, hatchSeconds, topN, weightClass, router]);
 
   const result = useMemo(
     () =>
@@ -95,8 +101,9 @@ function HomeContent() {
         weightKg: Number(deferredWeightKg),
         hatchSeconds,
         topN,
+        eggWeightClass: weightClass,
       }),
-    [deferredSizeM, deferredWeightKg, hatchSeconds, topN],
+    [deferredSizeM, deferredWeightKg, hatchSeconds, topN, weightClass],
   );
 
   const canShowResults = sizeM.trim() !== "" || weightKg.trim() !== "";
@@ -109,6 +116,7 @@ function HomeContent() {
   return (
     <>
       <Toast />
+      <ThemeToggle />
       <main className="shell">
         <section className="hero">
           <p className="eyebrow">Rocom Egg Oracle</p>
@@ -164,6 +172,20 @@ function HomeContent() {
                 ))}
               </select>
             </label>
+            <label className="field">
+              <span className="fieldLabel">重量类别</span>
+              <select
+                value={weightClass}
+                onChange={(e) => setWeightClass(e.target.value as EggWeightClass | "all")}
+              >
+                <option value="all">全部</option>
+                <option value="ultraLight">{getEggWeightClassLabel("ultraLight")}</option>
+                <option value="light">{getEggWeightClassLabel("light")}</option>
+                <option value="medium">{getEggWeightClassLabel("medium")}</option>
+                <option value="heavy">{getEggWeightClassLabel("heavy")}</option>
+                <option value="ultraHeavy">{getEggWeightClassLabel("ultraHeavy")}</option>
+              </select>
+            </label>
           </div>
 
           <div className="filterRow">
@@ -207,6 +229,9 @@ function HomeContent() {
           </div>
           {hatchSeconds !== "all" && (
             <span className="filterHint">已按 {formatHatchTime(hatchSeconds)} 筛选</span>
+          )}
+          {weightClass !== "all" && (
+            <span className="filterHint">已按 {getEggWeightClassLabel(weightClass)} 筛选</span>
           )}
         </div>
 
@@ -356,6 +381,31 @@ function showToast(message: string) {
 
 function Toast() {
   return <div id="toast" className="toast" aria-live="polite" />;
+}
+
+/* ── Theme Toggle ── */
+
+function ThemeToggle() {
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    setDark(document.documentElement.getAttribute("data-theme") === "dark");
+  }, []);
+
+  const toggle = useCallback(() => {
+    setDark((prev) => {
+      const next = !prev;
+      document.documentElement.setAttribute("data-theme", next ? "dark" : "");
+      localStorage.setItem("theme", next ? "dark" : "light");
+      return next;
+    });
+  }, []);
+
+  return (
+    <button className="themeToggle" type="button" onClick={toggle} aria-label="切换主题">
+      {dark ? "☀" : "☾"}
+    </button>
+  );
 }
 
 /* ── Shared components ── */

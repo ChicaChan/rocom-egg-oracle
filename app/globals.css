@@ -12,11 +12,36 @@
   --green-light: #ecfdf5;
   --red: #dc2626;
   --red-light: #fef2f2;
+  --bg: #f5f5f4;
+  --input-bg: #fafafa;
+  --rank-bg: #f3f4f6;
+  --range-bg: #f9fafb;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
   --radius: 12px;
   --radius-lg: 16px;
+}
+
+[data-theme="dark"] {
+  --ink: #e5e5e5;
+  --muted: #9ca3af;
+  --line: #374151;
+  --card: #1f2937;
+  --card-hover: #283548;
+  --accent: #f97316;
+  --accent-light: #2d1f14;
+  --green: #34d399;
+  --green-light: #0d2b1f;
+  --red: #f87171;
+  --red-light: #2d1518;
+  --bg: #111827;
+  --input-bg: #1f2937;
+  --rank-bg: #374151;
+  --range-bg: #1f2937;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -35,7 +60,7 @@ body {
   font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  background: #f5f5f4;
+  background: var(--bg);
 }
 
 button,
@@ -129,7 +154,7 @@ code {
 
 .inputRow {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr auto auto;
   gap: 16px;
   align-items: end;
   margin-bottom: 18px;
@@ -153,11 +178,7 @@ code {
   align-items: center;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fafafa;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.inputWrap:focus-within {
+  background: var(--input-bg);
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
 }
@@ -187,7 +208,7 @@ select {
   min-height: 42px;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fafafa;
+  background: var(--input-bg);
   padding: 0 12px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -373,7 +394,7 @@ select:hover {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fafafa;
+  background: var(--input-bg);
   padding: 10px 14px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -489,7 +510,7 @@ select:hover {
   display: grid;
   place-items: center;
   border-radius: 10px;
-  background: #f3f4f6;
+  background: var(--rank-bg);
   font-size: 0.9rem;
   font-weight: 900;
   color: var(--muted);
@@ -551,7 +572,7 @@ select:hover {
 
 .candidateCard .ranges span {
   border-radius: 6px;
-  background: #f9fafb;
+  background: var(--range-bg);
   padding: 3px 10px;
 }
 
@@ -659,7 +680,7 @@ select:hover {
 
 .emptyInline {
   border-radius: var(--radius);
-  background: #f9fafb;
+  background: var(--range-bg);
   padding: 16px;
   color: var(--muted);
   font-size: 0.9rem;
@@ -685,6 +706,79 @@ select:hover {
 
 .notes p + p {
   margin-top: 8px;
+}
+
+/* ── Dark Mode Overrides ── */
+
+[data-theme="dark"] .inputWrap:focus-within,
+[data-theme="dark"] .searchInput:focus {
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+[data-theme="dark"] select:hover,
+[data-theme="dark"] .candidateCard:hover {
+  border-color: #4b5563;
+}
+
+[data-theme="dark"] .examples button {
+  border-color: #7c2d12;
+}
+
+[data-theme="dark"] .examples button:hover {
+  background: #7c2d12;
+  border-color: var(--accent);
+}
+
+[data-theme="dark"] .candidateCard:nth-child(1) .rank {
+  background: #2d2410;
+  color: #fbbf24;
+}
+
+[data-theme="dark"] .candidateCard:nth-child(2) .rank {
+  background: #2d2d2d;
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .candidateCard:nth-child(3) .rank {
+  background: #2d1a10;
+  color: #fb923c;
+}
+
+[data-theme="dark"] .freshnessBanner {
+  background: #2d2410;
+  color: #fbbf24;
+}
+
+[data-theme="dark"] .errorBox {
+  border-color: #7f1d1d;
+}
+
+[data-theme="dark"] .rBadge {
+  color: var(--bg);
+}
+
+/* ── Theme Toggle ── */
+
+.themeToggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.15s;
+  z-index: 50;
+}
+
+.themeToggle:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
 }
 
 /* ── Responsive ── */
