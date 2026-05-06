@@ -10,6 +10,11 @@ const OUTPUT_FILE = path.join(DATA_DIR, "pets.json");
 
 const rawData = await fetchJsonWithRetry(BREEDING_URL);
 
+if (rawData._fromCache) {
+  console.log("使用缓存数据，跳过转换管线");
+  process.exit(0);
+}
+
 if (!Array.isArray(rawData.pet_egg_conf)) {
   throw new Error("Invalid breeding data: pet_egg_conf is missing.");
 }
@@ -106,7 +111,7 @@ async function fetchJsonWithRetry(url) {
   console.warn("所有数据源不可用，回退到本地缓存数据");
   try {
     const cache = JSON.parse(await readFile(OUTPUT_FILE, "utf8"));
-    return { pet_egg_conf: cache };
+    return { pet_egg_conf: cache, _fromCache: true };
   } catch {
     throw lastError;
   }

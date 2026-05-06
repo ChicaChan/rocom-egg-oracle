@@ -41,16 +41,28 @@ function HomeContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  const [sizeM, setSizeM] = useState(() => searchParams.get("size") ?? "");
-  const [weightKg, setWeightKg] = useState(() => searchParams.get("weight") ?? "");
+  const [sizeM, setSizeM] = useState(() => {
+    const v = searchParams.get("size");
+    const n = Number(v);
+    if (v && !Number.isNaN(n) && n > 0 && n <= 10) return v;
+    return "";
+  });
+  const [weightKg, setWeightKg] = useState(() => {
+    const v = searchParams.get("weight");
+    const n = Number(v);
+    if (v && !Number.isNaN(n) && n > 0 && n <= 100) return v;
+    return "";
+  });
   const [hatchSeconds, setHatchSeconds] = useState<number | "all">(() => {
     const hatch = searchParams.get("hatch");
-    if (hatch && !Number.isNaN(Number(hatch))) return Number(hatch);
+    const n = Number(hatch);
+    if (hatch && !Number.isNaN(n) && hatchOptions.includes(n)) return n;
     return "all";
   });
   const [topN, setTopN] = useState(() => {
     const top = searchParams.get("top");
-    if (top && !Number.isNaN(Number(top))) return Number(top);
+    const n = Number(top);
+    if (top && !Number.isNaN(n) && n >= 1 && n <= 50) return n;
     return 12;
   });
   const [searchQuery, setSearchQuery] = useState("");
@@ -114,7 +126,6 @@ function HomeContent() {
 
   return (
     <>
-      <Toast />
       <ThemeToggle />
       <main className="shell">
         <section className="hero">
@@ -362,25 +373,7 @@ function DataFreshnessBanner({ ageDays }: { ageDays: number }) {
   );
 }
 
-let toastTimer: ReturnType<typeof setTimeout>;
-let toastId = 0;
-
-function showToast(message: string) {
-  clearTimeout(toastTimer);
-  toastId += 1;
-  const el = document.getElementById("toast");
-  if (el) {
-    el.textContent = message;
-    el.className = "toast toastVisible";
-    toastTimer = setTimeout(() => {
-      el.className = "toast";
-    }, 2000);
-  }
-}
-
-function Toast() {
-  return <div id="toast" className="toast" aria-live="polite" />;
-}
+// 分享按钮自带 copied 状态反馈，无需全局 toast
 
 /* ── Theme Toggle ── */
 

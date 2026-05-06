@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const CDN_BASE = "https://jp.qxqx.cf/RocomUID/resource/rocomicon";
+const MAX_SIZE = 512 * 1024;
 
 export async function GET(request: NextRequest) {
   const name = request.nextUrl.searchParams.get("name");
@@ -19,12 +20,25 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: "not found" }, { status: 404 });
     }
 
+    const contentLength = res.headers.get("content-length");
+    if (contentLength && parseInt(contentLength, 10) > MAX_SIZE) {
+      return NextResponse.json({ error: "too large" }, { status: 502 });
+    }
+
+    const contentType = res.headers.get("content-type") || "";
+    if (!contentType.startsWith("image/")) {
+      return NextResponse.json({ error: "not an image" }, { status: 502 });
+    }
+
     const body = await res.arrayBuffer();
+    if (body.byteLength > MAX_SIZE) {
+      return NextResponse.json({ error: "too large" }, { status: 502 });
+    }
 
     return new NextResponse(body, {
       status: 200,
       headers: {
-        "Content-Type": "image/png",
+        "Content-Type": contentType,
         "Cache-Control": "public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400",
         "CDN-Cache-Control": "public, max-age=604800",
       },
