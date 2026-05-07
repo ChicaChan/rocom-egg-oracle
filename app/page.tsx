@@ -140,12 +140,14 @@ function HomeContent() {
 
         <section className="panel inputPanel" aria-label="预测输入">
           <div className="inputRow">
-            <label className="field">
+            <label className="field" htmlFor="size">
               <span className="fieldLabel">蛋尺寸</span>
               <div className="inputWrap">
                 <input
+                  id="size"
                   inputMode="decimal"
                   min="0"
+                  name="size"
                   placeholder="0.35"
                   type="number"
                   value={sizeM}
@@ -154,12 +156,14 @@ function HomeContent() {
                 <span className="unit">m</span>
               </div>
             </label>
-            <label className="field">
+            <label className="field" htmlFor="weight">
               <span className="fieldLabel">蛋重量</span>
               <div className="inputWrap">
                 <input
+                  id="weight"
                   inputMode="decimal"
                   min="0"
+                  name="weight"
                   placeholder="7.45"
                   type="number"
                   value={weightKg}
@@ -168,9 +172,11 @@ function HomeContent() {
                 <span className="unit">kg</span>
               </div>
             </label>
-            <label className="field">
+            <label className="field" htmlFor="hatch">
               <span className="fieldLabel">孵化时间</span>
               <select
+                id="hatch"
+                name="hatch"
                 value={hatchSeconds}
                 onChange={(e) =>
                   setHatchSeconds(e.target.value === "all" ? "all" : Number(e.target.value))
@@ -182,9 +188,11 @@ function HomeContent() {
                 ))}
               </select>
             </label>
-            <label className="field">
+            <label className="field" htmlFor="weightClass">
               <span className="fieldLabel">重量类别</span>
               <select
+                id="weightClass"
+                name="weightClass"
                 value={weightClass}
                 onChange={(e) => setWeightClass(e.target.value as EggWeightClass | "all")}
               >
@@ -199,9 +207,9 @@ function HomeContent() {
           </div>
 
           <div className="filterRow">
-            <label className="field">
+            <label className="field" htmlFor="topN">
               <span className="fieldLabel">结果数量</span>
-              <select value={topN} onChange={(e) => setTopN(Number(e.target.value))}>
+              <select id="topN" name="topN" value={topN} onChange={(e) => setTopN(Number(e.target.value))}>
                 <option value={8}>Top 8</option>
                 <option value={12}>Top 12</option>
                 <option value={20}>Top 20</option>
@@ -288,7 +296,9 @@ function HomeContent() {
               {result.matches.length > 0 && (
                 <div className="searchRow">
                   <input
+                    id="search"
                     className="searchInput"
+                    name="search"
                     placeholder="搜索精灵名称..."
                     type="text"
                     value={searchQuery}

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://rocom.eu.cc"),
   robots: "index, follow",
   alternates: { canonical: "https://rocom.eu.cc" },
+  icons: { icon: "/og-image.png" },
   openGraph: {
     title: "洛克王国世界孵蛋预测工具",
     description: "输入精灵蛋尺寸和重量，反查可能孵出的精灵。",
