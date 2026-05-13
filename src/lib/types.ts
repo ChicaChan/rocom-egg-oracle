@@ -5,6 +5,7 @@ export type PetEggRange = {
   sourceRecordId: number;
   petId: number;
   name: string;
+  imagePath: string;
   sizeMinM: number;
   sizeMaxM: number;
   weightMinKg: number;

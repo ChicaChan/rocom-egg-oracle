@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const CDN_BASE = "https://jp.qxqx.cf/RocomUID/resource/rocomicon";
-const MAX_SIZE = 512 * 1024;
+const MAX_SIZE = 1024 * 1024;
 
 export async function GET(request: NextRequest) {
   const name = request.nextUrl.searchParams.get("name");

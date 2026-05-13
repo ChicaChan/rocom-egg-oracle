@@ -38,7 +38,7 @@ git clone https://github.com/<user>/<repo>.git /opt/rocom-egg-predictor
 cd /opt/rocom-egg-predictor
 docker compose up -d --build
 docker compose ps
-curl http://127.0.0.1:3000/api/health
+curl http://127.0.0.1:3010/api/health
 ```
 
 更新：
@@ -140,7 +140,7 @@ curl http://your-domain.com/api/health
 
 ## 6. 数据更新
 
-项目默认只导入 RocomUID `breeding.json` 中带 `random_eggs_group` 的当前随机蛋池记录。
+项目默认只导入 RocomUID `breeding.json` 中带 `random_eggs_group` 的当前随机蛋池记录，并在更新时把当前蛋池精灵图片同步到 `public/pets/`。
 
 手动更新：
 

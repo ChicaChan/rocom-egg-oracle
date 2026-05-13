@@ -13,6 +13,7 @@ Rocom Egg Oracle 是一个面向《洛克王国：世界》玩家的精灵蛋预
 - 显示蛋重量分组：超轻蛋、轻蛋、中等蛋、重蛋、超重蛋。
 - 支持孵化时间筛选和 Top N 结果数量控制。
 - 默认只导入当前随机蛋池记录，避免把底层全量配置误当作可孵池。
+- 数据更新时会预下载当前蛋池精灵图片到服务器本地，页面优先使用本地静态文件。
 - 可本地运行，也可通过 Docker、systemd、Nginx 部署到 Linux 服务器。
 
 ## 在线演示
@@ -33,7 +34,7 @@ https://raw.githubusercontent.com/jiluoQAQ/RocomUID/main/RocomUID/utils/map/bree
 
 注意：本项目默认只导入带 `random_eggs_group` 的当前随机蛋池记录，不会直接导入底层全量配置。
 
-更新数据：
+更新数据和图片缓存：
 
 ```bash
 npm run data:update
@@ -101,7 +102,7 @@ http://127.0.0.1:3000
 
 ```bash
 npm run dev          # 本地开发
-npm run data:update  # 更新孵蛋数据
+npm run data:update  # 更新孵蛋数据和本地图片缓存
 npm run lint         # TypeScript 类型检查
 npm run test         # 单元测试
 npm run build        # 生产构建
@@ -118,7 +119,7 @@ Docker Compose 快速部署：
 git clone https://github.com/ChicaChan/rocom-egg-oracle.git /opt/rocom-egg-oracle
 cd /opt/rocom-egg-oracle
 docker compose up -d --build
-curl http://127.0.0.1:3000/api/health
+curl http://127.0.0.1:3010/api/health
 ```
 
 原生 systemd 部署：
@@ -132,6 +133,7 @@ REPO_URL=https://github.com/ChicaChan/rocom-egg-oracle.git sudo -E bash scripts/
 ```text
 app/                  Next.js 页面和 API
 data/                 转换后的孵蛋数据
+public/pets/          预缓存的精灵图片
 src/lib/              类型定义和预测算法
 scripts/              数据更新与部署脚本
 deploy/               systemd 和 Nginx 模板
