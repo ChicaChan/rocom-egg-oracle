@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { PredictorShell } from "@/components/predictor/PredictorShell";
 import { HeroDecor } from "@/components/decor/HeroDecor";
+import { EggIcon } from "@/components/decor/EggIcon";
 import { DataFreshness } from "@/components/predictor/DataFreshness";
 import { Faq } from "@/components/predictor/Faq";
 import { getPets, getPetsMeta } from "@/lib/data/pets";
@@ -18,8 +19,8 @@ export default function Page() {
         {/* Hero with decoration */}
         <section className="relative text-center space-y-4 py-6">
           <HeroDecor />
-          <div className="text-6xl motion-safe:animate-[float_4s_ease-in-out_infinite]" aria-hidden>
-            🥚
+          <div className="flex justify-center motion-safe:animate-[float_4s_ease-in-out_infinite]">
+            <EggIcon size={88} cracked />
           </div>
           <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
             输入蛋尺寸和重量，反查可孵精灵

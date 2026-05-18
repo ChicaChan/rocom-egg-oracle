@@ -9,6 +9,7 @@ import { ConfidenceBar } from "./ConfidenceBar";
 import type { Candidate } from "@/lib/predict";
 import { formatSizeRange, formatWeightRange } from "@/lib/format/number";
 import { dataQualityLabel, petImageUrl } from "@/lib/format/pet";
+import { EggIcon } from "@/components/decor/EggIcon";
 
 export type CandidateCardProps = {
   candidate: Candidate;
@@ -57,7 +58,7 @@ export function CandidateCard({ candidate, rank, variant }: CandidateCardProps) 
 
         {/* 立绘 / 占位 */}
         <div
-          className="bg-muted/50 flex shrink-0 items-center justify-center rounded-lg overflow-hidden border"
+          className="bg-muted/40 flex shrink-0 items-center justify-center rounded-lg overflow-hidden border"
           style={{ width: imageSize, height: imageSize }}
           aria-hidden
         >
@@ -69,9 +70,15 @@ export function CandidateCard({ candidate, rank, variant }: CandidateCardProps) 
               height={imageSize}
               className="object-contain"
               loading={variant === "standard" ? "lazy" : "eager"}
+              unoptimized
             />
           ) : (
-            <span className="text-2xl">🥚</span>
+            <EggIcon
+              type={pet.types[0]}
+              shiny={pet.isShiny}
+              mount={pet.isMount}
+              size={Math.round(imageSize * 0.78)}
+            />
           )}
         </div>
 

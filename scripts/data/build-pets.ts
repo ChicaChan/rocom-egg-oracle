@@ -26,6 +26,13 @@ const DETAILS_PATH = resolve("scripts/.cache/luodan/luodan-details.json");
 const METADATA_PATH = resolve("scripts/.cache/luodan/luodan-metadata.json");
 const PETS_PATH = resolve("data/pets.json");
 
+/* worker.js 元数据缺失精灵的拼音手动映射（用于拼 image 文件名） */
+const PINYIN_FALLBACK: Record<string, string> = {
+  迪莫: "dimo",
+  圣光迪莫: "shengguangdimo",
+  学院呱呱: "xueyuanguagua",
+};
+
 function normalizeName(s: string): string {
   return s.replace(/\s+/g, "");
 }
@@ -69,8 +76,20 @@ function main() {
     if (meta) matchedFromMeta.push(d.name);
     else unmatchedFromMeta.push(d.name);
 
-    const id = meta
-      ? `${meta.pinyin}${d.formLabel ? "-" + slugify(d.formLabel) : ""}${d.isMount ? "-mount" : ""}`
+    /* 拼音：优先 worker.js 元数据，否则查手动 fallback 表 */
+    const pinyin = meta?.pinyin ?? PINYIN_FALLBACK[d.name] ?? null;
+
+    /* image：优先 worker.js 给出的文件名，否则根据 pinyin 拼 + 本地存在性校验 */
+    let imageFile: string | null = meta?.image ?? null;
+    if (!imageFile && pinyin) {
+      const guess = `JL_${pinyin}.webp`;
+      if (existsSync(resolve("public/pets/luodan", guess))) {
+        imageFile = guess;
+      }
+    }
+
+    const id = pinyin
+      ? `${pinyin}${d.formLabel ? "-" + slugify(d.formLabel) : ""}${d.isMount ? "-mount" : ""}`
       : `${slugify(d.name)}${d.formLabel ? "-" + slugify(d.formLabel) : ""}${d.isMount ? "-mount" : ""}`;
 
     const sources: Pet["sources"] = [
@@ -92,17 +111,14 @@ function main() {
         : null,
       aliases: meta && meta.displayKey !== d.name ? [meta.displayKey] : [],
       types: d.rawTypes,
-      imagePath:
-        meta?.image && existsSync(resolve("public/pets", String(meta.id) + ".png"))
-          ? `/pets/${meta.id}.png`
-          : null,
-      luodanImage: meta?.image ?? null,
+      imagePath: imageFile ? `/pets/luodan/${imageFile}` : null,
+      luodanImage: imageFile,
       size: d.size,
       weight: d.weight,
       eggGroup: null,
       eggGroupIds: meta?.eggGroups ?? [],
       luodanId: meta?.id ?? null,
-      pinyin: meta?.pinyin ?? null,
+      pinyin,
       category: meta?.classisName ?? null,
       hatchSeconds: null,
       role: null,

@@ -10,7 +10,7 @@
       "草",
       "萌"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_pugongying.webp",
     "luodanImage": "JL_pugongying.webp",
     "size": {
       "minM": 0.13,
@@ -36,12 +36,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/18-009",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "xiaoshulan-mount",
@@ -54,7 +54,7 @@
       "普通",
       "水"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_xiaoshulan.webp",
     "luodanImage": "JL_xiaoshulan.webp",
     "size": {
       "minM": 0.16,
@@ -80,12 +80,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/20-278",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "dishu",
@@ -97,7 +97,7 @@
     "types": [
       "毒"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_dishu.webp",
     "luodanImage": "JL_dishu.webp",
     "size": {
       "minM": 0.16,
@@ -123,12 +123,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/20-278",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "xiaotiantian",
@@ -141,7 +141,7 @@
       "水",
       "萌"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_xiaotiantian.webp",
     "luodanImage": "JL_xiaotiantian.webp",
     "size": {
       "minM": 0.17,
@@ -167,12 +167,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/20-278",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "keliji-mount",
@@ -184,7 +184,7 @@
     "types": [
       "火"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_keliji.webp",
     "luodanImage": "JL_keliji.webp",
     "size": {
       "minM": 0.17,
@@ -210,12 +210,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/20-278",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "xiaolinggu",
@@ -227,7 +227,7 @@
     "types": [
       "幽"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_xiaolinggu.webp",
     "luodanImage": "JL_xiaolinggu.webp",
     "size": {
       "minM": 0.18,
@@ -253,12 +253,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/20-278",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "anyekulou-mount",
@@ -270,7 +270,7 @@
     "types": [
       "幽"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_anyekulou.webp",
     "luodanImage": "JL_anyekulou.webp",
     "size": {
       "minM": 0.18,
@@ -296,12 +296,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/20-278",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "xiaojiachong-mount",
@@ -313,7 +313,7 @@
     "types": [
       "虫"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_xiaojiachong.webp",
     "luodanImage": "JL_xiaojiachong.webp",
     "size": {
       "minM": 0.2,
@@ -339,15 +339,15 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/20-278",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
-    "id": "学院呱呱",
+    "id": "xueyuanguagua",
     "petId": null,
     "name": "学院呱呱",
     "displayName": "学院呱呱",
@@ -356,8 +356,8 @@
     "types": [
       "武"
     ],
-    "imagePath": null,
-    "luodanImage": null,
+    "imagePath": "/pets/luodan/JL_xueyuanguagua.webp",
+    "luodanImage": "JL_xueyuanguagua.webp",
     "size": {
       "minM": 0.21,
       "maxM": 0.27
@@ -369,7 +369,7 @@
     "eggGroup": null,
     "eggGroupIds": [],
     "luodanId": null,
-    "pinyin": null,
+    "pinyin": "xueyuanguagua",
     "category": null,
     "hatchSeconds": null,
     "role": null,
@@ -379,12 +379,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "bengbengzhongzi_caiyuqiu-彩玉球形态-mount",
@@ -402,7 +402,7 @@
       "草",
       "毒"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_bengbengzhongzi_caiyuqiu.webp",
     "luodanImage": "JL_bengbengzhongzi_caiyuqiu.webp",
     "size": {
       "minM": 0.2,
@@ -427,12 +427,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "bengbengzhongzi_caiyuqiu-短毛球形态-mount",
@@ -450,7 +450,7 @@
       "草",
       "毒"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_bengbengzhongzi_caiyuqiu.webp",
     "luodanImage": "JL_bengbengzhongzi_caiyuqiu.webp",
     "size": {
       "minM": 0.2,
@@ -475,12 +475,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "bengbengzhongzi_caiyuqiu-海神球形态-mount",
@@ -498,7 +498,7 @@
       "草",
       "毒"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_bengbengzhongzi_caiyuqiu.webp",
     "luodanImage": "JL_bengbengzhongzi_caiyuqiu.webp",
     "size": {
       "minM": 0.2,
@@ -523,12 +523,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "bengbengzhongzi_caiyuqiu-象牙球形态-mount",
@@ -546,7 +546,7 @@
       "草",
       "毒"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_bengbengzhongzi_caiyuqiu.webp",
     "luodanImage": "JL_bengbengzhongzi_caiyuqiu.webp",
     "size": {
       "minM": 0.2,
@@ -571,12 +571,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "huaguitianer",
@@ -589,7 +589,7 @@
       "翼",
       "水"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_huaguitianer.webp",
     "luodanImage": "JL_huaguitianer.webp",
     "size": {
       "minM": 0.2,
@@ -615,12 +615,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "banban",
@@ -632,7 +632,7 @@
     "types": [
       "翼"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_banban.webp",
     "luodanImage": "JL_banban.webp",
     "size": {
       "minM": 0.2,
@@ -657,12 +657,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "dishu_xushui",
@@ -674,7 +674,7 @@
     "types": [
       "地"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_dishu_xushui.webp",
     "luodanImage": "JL_dishu_xushui.webp",
     "size": {
       "minM": 0.2,
@@ -699,12 +699,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "caotouya",
@@ -716,7 +716,7 @@
     "types": [
       "草"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_caotouya.webp",
     "luodanImage": "JL_caotouya.webp",
     "size": {
       "minM": 0.21,
@@ -742,12 +742,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "yuanyanzhizhu",
@@ -759,7 +759,7 @@
     "types": [
       "虫"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_yuanyanzhizhu.webp",
     "luodanImage": "JL_yuanyanzhizhu.webp",
     "size": {
       "minM": 0.2,
@@ -784,12 +784,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/25-195",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "huayuanman-mount",
@@ -802,7 +802,7 @@
       "地",
       "草"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_huayuanman.webp",
     "luodanImage": "JL_huayuanman.webp",
     "size": {
       "minM": 0.25,
@@ -828,12 +828,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/27-155",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "miaomiao-mount",
@@ -845,7 +845,7 @@
     "types": [
       "草"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_miaomiao.webp",
     "luodanImage": "JL_miaomiao.webp",
     "size": {
       "minM": 0.23,
@@ -871,12 +871,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/27-155",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "xiaoheimao",
@@ -888,7 +888,7 @@
     "types": [
       "普通"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_xiaoheimao.webp",
     "luodanImage": "JL_xiaoheimao.webp",
     "size": {
       "minM": 0.23,
@@ -914,12 +914,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/27-155",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "shuidishe-mount",
@@ -932,7 +932,7 @@
       "水",
       "武"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_shuidishe.webp",
     "luodanImage": "JL_shuidishe.webp",
     "size": {
       "minM": 0.23,
@@ -958,12 +958,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/27-155",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "bulusi-mount",
@@ -975,7 +975,7 @@
     "types": [
       "冰"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_bulusi.webp",
     "luodanImage": "JL_bulusi.webp",
     "size": {
       "minM": 0.23,
@@ -1001,12 +1001,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/27-155",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "kuangjingchong",
@@ -1019,7 +1019,7 @@
       "光",
       "地"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_kuangjingchong.webp",
     "luodanImage": "JL_kuangjingchong.webp",
     "size": {
       "minM": 0.23,
@@ -1045,15 +1045,15 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/28-236",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
-    "id": "迪莫",
+    "id": "dimo",
     "petId": null,
     "name": "迪莫",
     "displayName": "迪莫",
@@ -1062,8 +1062,8 @@
     "types": [
       "光"
     ],
-    "imagePath": null,
-    "luodanImage": null,
+    "imagePath": "/pets/luodan/JL_dimo.webp",
+    "luodanImage": "JL_dimo.webp",
     "size": {
       "minM": 0.23,
       "maxM": 0.32
@@ -1075,7 +1075,7 @@
     "eggGroup": null,
     "eggGroupIds": [],
     "luodanId": null,
-    "pinyin": null,
+    "pinyin": "dimo",
     "category": null,
     "hatchSeconds": null,
     "role": null,
@@ -1085,12 +1085,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/28-236",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "songzai-mount",
@@ -1103,7 +1103,7 @@
       "草",
       "武"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_songzai.webp",
     "luodanImage": "JL_songzai.webp",
     "size": {
       "minM": 0.22,
@@ -1128,12 +1128,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/28-236",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "xiaoye",
@@ -1145,7 +1145,7 @@
     "types": [
       "恶"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_xiaoye.webp",
     "luodanImage": "JL_xiaoye.webp",
     "size": {
       "minM": 0.22,
@@ -1171,12 +1171,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/28-236",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "duoxi-mount",
@@ -1189,7 +1189,7 @@
       "机械",
       "地"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_duoxi.webp",
     "luodanImage": "JL_duoxi.webp",
     "size": {
       "minM": 0.28,
@@ -1215,12 +1215,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/28-236",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "lversongshu",
@@ -1232,7 +1232,7 @@
     "types": [
       "普通"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_lversongshu.webp",
     "luodanImage": "JL_lversongshu.webp",
     "size": {
       "minM": 0.2,
@@ -1257,12 +1257,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/28-236",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "qianjikui-mount",
@@ -1274,7 +1274,7 @@
     "types": [
       "幻"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_qianjikui.webp",
     "luodanImage": "JL_qianjikui.webp",
     "size": {
       "minM": 0.27,
@@ -1300,12 +1300,12 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/28-236",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   },
   {
     "id": "yajiji_shouling-紧实的样子",
@@ -1322,7 +1322,7 @@
     "types": [
       "普通"
     ],
-    "imagePath": null,
+    "imagePath": "/pets/luodan/JL_yajiji_shouling.webp",
     "luodanImage": "JL_yajiji_shouling.webp",
     "size": {
       "minM": 0.28,
@@ -1347,11 +1347,11 @@
       {
         "name": "luodan",
         "url": "https://luokewangguofudan.wiki/egg-size/28-236",
-        "fetchedAt": "2026-05-18T07:50:15.290Z",
+        "fetchedAt": "2026-05-18T14:08:31.451Z",
         "confidence": "verified"
       }
     ],
     "dataQuality": "verified",
-    "updatedAt": "2026-05-18T07:50:15.290Z"
+    "updatedAt": "2026-05-18T14:08:31.451Z"
   }
 ]
