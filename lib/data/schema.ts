@@ -9,11 +9,8 @@ import { z } from "zod";
    - 区间用嵌套对象，避免 sizeMinM/sizeMaxM 的扁平结构
    ─────────────────────────────────────────────────────── */
 
-export const PetTypeSchema = z.enum([
-  "光", "暗", "草", "火", "水", "地", "电",
-  "风", "冰", "毒", "武", "虫", "机械", "恶", "龙", "鬼",
-  "普通",
-]);
+/* 属性使用宽松 string，灵蛋所详情页含「萌」「幽」等非主属性 */
+export const PetTypeSchema = z.string().min(1);
 export type PetType = z.infer<typeof PetTypeSchema>;
 
 export const FormKindSchema = z.enum([

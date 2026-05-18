@@ -207,6 +207,10 @@ async function main() {
   console.log(`[luodan] wrote ${OUTPUT}`);
 }
 
+export async function runExtractLuodan() {
+  await main();
+}
+
 if (process.argv[1]?.endsWith("extract-luodan.ts")) {
   main().catch((e) => {
     console.error(e);

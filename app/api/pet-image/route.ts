@@ -1,35 +1,19 @@
-import petsData from "@/data/pets.json";
 import { NextRequest, NextResponse } from "next/server";
-
-type PetImageRecord = {
-  name: string;
-  petId: number;
-  imagePath: string;
-};
-
-const pets = petsData as PetImageRecord[];
+import { findPetByName, findPetById } from "@/lib/data/pets";
 
 export async function GET(request: NextRequest) {
   const name = request.nextUrl.searchParams.get("name")?.trim();
-  const petId = request.nextUrl.searchParams.get("petId")?.trim();
+  const idOrPetId = request.nextUrl.searchParams.get("petId")?.trim() ??
+    request.nextUrl.searchParams.get("id")?.trim();
 
-  if (!name && !petId) {
-    return NextResponse.json({ error: "missing name or petId" }, { status: 400 });
+  if (!name && !idOrPetId) {
+    return NextResponse.json({ error: "missing name or id/petId" }, { status: 400 });
   }
 
-  const pet = pets.find((item) => {
-    if (petId && String(item.petId) === petId) {
-      return true;
-    }
+  let pet = idOrPetId ? findPetById(idOrPetId) : undefined;
+  if (!pet && name) pet = findPetByName(name);
 
-    if (name && item.name === name) {
-      return true;
-    }
-
-    return false;
-  });
-
-  if (!pet) {
+  if (!pet || !pet.imagePath) {
     return NextResponse.json({ error: "not found" }, { status: 404 });
   }
 
