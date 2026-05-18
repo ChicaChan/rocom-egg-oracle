@@ -18,7 +18,7 @@ export type CandidateCardProps = {
 };
 
 const RANK_RING: Record<CandidateCardProps["variant"], string> = {
-  hero: "ring-2 ring-primary/40 shadow-lg shadow-primary/10",
+  hero: "ring-2 ring-primary/40 shadow-lg shadow-primary/10 motion-safe:animate-[glow-pulse_3s_ease-in-out_infinite]",
   medium: "ring-1 ring-primary/20",
   standard: "",
 };
@@ -38,7 +38,7 @@ export function CandidateCard({ candidate, rank, variant }: CandidateCardProps) 
   return (
     <Card
       className={cn(
-        "relative gap-4 py-4 transition-shadow hover:shadow-md",
+        "relative gap-4 py-4 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 motion-reduce:transform-none",
         RANK_RING[variant],
         variant === "hero" && "md:py-5",
       )}

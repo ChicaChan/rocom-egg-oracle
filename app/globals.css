@@ -95,3 +95,23 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 }
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(-2deg);
+    }
+    50% {
+      transform: translateY(-8px) rotate(2deg);
+    }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 0 0 oklch(0.73 0.15 70 / 0.25);
+    }
+    50% {
+      box-shadow: 0 0 0 6px oklch(0.73 0.15 70 / 0.05);
+    }
+  }
+}
