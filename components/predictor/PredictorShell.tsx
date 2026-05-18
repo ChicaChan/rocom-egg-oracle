@@ -10,6 +10,8 @@ import { parseParams, serializeParams } from "@/lib/url/params";
 import { EggInputPanel } from "./EggInputPanel";
 import { PresetButtons, type Preset } from "./PresetButtons";
 import { EmptyState } from "./EmptyState";
+import { CandidateList } from "./CandidateList";
+import { NearbyReference } from "./NearbyReference";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -32,7 +34,10 @@ export function PredictorShell({ pets, totalCount }: PredictorShellProps) {
   /* 同步 URL（防抖 200ms） */
   React.useEffect(() => {
     const handle = setTimeout(() => {
-      const qs = serializeParams({ sizeM: sizeM ?? undefined, weightKg: weightKg ?? undefined });
+      const qs = serializeParams({
+        sizeM: sizeM ?? undefined,
+        weightKg: weightKg ?? undefined,
+      });
       const next = qs ? `?${qs}` : "/";
       router.replace(next, { scroll: false });
     }, 200);
@@ -45,7 +50,10 @@ export function PredictorShell({ pets, totalCount }: PredictorShellProps) {
   }, [pets, sizeM, weightKg]);
 
   const copyShareLink = async () => {
-    const qs = serializeParams({ sizeM: sizeM ?? undefined, weightKg: weightKg ?? undefined });
+    const qs = serializeParams({
+      sizeM: sizeM ?? undefined,
+      weightKg: weightKg ?? undefined,
+    });
     const url = `${window.location.origin}${qs ? "/?" + qs : "/"}`;
     try {
       await navigator.clipboard.writeText(url);
@@ -97,59 +105,27 @@ export function PredictorShell({ pets, totalCount }: PredictorShellProps) {
           <EmptyState />
         </>
       ) : (
-        <div className="space-y-2">
-          <div className="text-sm text-muted-foreground">
-            数据库 {totalCount} 只精灵中，严格命中 {result.stats.strictMatchCount} 只，
-            邻近参考 {result.nearby.length} 只。
-            <span className="ml-2 text-xs">
-              R ≈ {result.input.rValue.toFixed(2)} kg/m
+        <div className="space-y-4">
+          <div className="text-sm text-muted-foreground flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span>
+              数据库 <strong className="text-foreground">{totalCount}</strong> 只精灵
+              · 严格命中{" "}
+              <strong className="text-foreground">{result.stats.strictMatchCount}</strong> 只
+              · 邻近 {result.nearby.length} 只
             </span>
+            <span className="text-xs">R ≈ {result.input.rValue.toFixed(2)} kg/m</span>
           </div>
 
-          {/* MVP 阶段：列表渲染下一步阶段 4 接入。这里先用最小列表占位 */}
-          <ul className="grid gap-2">
-            {result.matches.map((c, i) => (
-              <li
-                key={c.pet.id}
-                className="flex items-baseline justify-between rounded-lg border px-4 py-3"
-              >
-                <span className="font-medium">
-                  {i + 1}. {c.pet.displayName}
-                </span>
-                <span className="text-sm text-muted-foreground tabular-nums">
-                  {c.confidence.label} · {c.matchScore.toFixed(1)}%
-                </span>
-              </li>
-            ))}
-          </ul>
-
-          {result.matches.length === 0 && result.nearby.length > 0 && (
+          {result.matches.length > 0 ? (
+            <CandidateList matches={result.matches} />
+          ) : (
             <div className="rounded-md border border-amber-500/30 bg-amber-500/5 px-4 py-3 text-sm">
-              当前数据库没有精灵能严格命中此尺寸 + 重量组合。
-              你可以试试稍微调整数值，或参考下面邻近候选。
+              当前数据库没有精灵能严格命中这组尺寸 × 重量。
+              你可以试试微调数值，或查看下方邻近参考。
             </div>
           )}
 
-          {result.nearby.length > 0 && (
-            <details className="mt-4 rounded-lg border px-4 py-3 text-sm">
-              <summary className="cursor-pointer text-muted-foreground">
-                邻近参考（{result.nearby.length}）
-              </summary>
-              <ul className="mt-2 space-y-1.5">
-                {result.nearby.map((c) => (
-                  <li
-                    key={c.pet.id}
-                    className="flex items-baseline justify-between text-muted-foreground"
-                  >
-                    <span>{c.pet.displayName}</span>
-                    <span className="text-xs tabular-nums">
-                      {c.confidence.label} · {c.matchScore.toFixed(1)}%
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </details>
-          )}
+          <NearbyReference candidates={result.nearby} />
         </div>
       )}
     </div>
