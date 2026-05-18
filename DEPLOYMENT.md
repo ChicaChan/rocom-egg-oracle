@@ -1,6 +1,9 @@
 # 部署指南
 
-本文档用于把项目上传到 GitHub，并部署到 Linux 服务器。
+本文档用于把项目部署到 Linux 服务器，或通过 Docker / Vercel 等方式上线。
+
+> v2 数据语义已切换到「蛋孵化阶段区间」，主源为[灵蛋所](https://luokewangguofudan.wiki)。
+> 旧的 BWIKI 抓取链路已弃用。更多见 [README.md](./README.md)。
 
 ## 1. GitHub 上传前检查
 
@@ -140,9 +143,17 @@ curl http://your-domain.com/api/health
 
 ## 6. 数据更新
 
-项目默认从 BWIKI “精灵图鉴” 页面提取正式服精灵，并在更新时把对应精灵图片同步到 `public/pets/`。
+项目数据来自灵蛋所详情页和前端 worker.js 元数据。数据管道由 4 个步骤组成：
 
-手动更新：
+```bash
+npm run data:update     # 完整管道：extract-luodan → fetch-details → build-pets → validate
+npm run data:fetch      # 仅抓 worker.js 元数据
+npm run data:validate   # 仅跑校验
+```
+
+CI 会每日凌晨 02:37 自动跑一次 `data:update`，如有变化提交到 main 分支。
+
+手动更新部署后的数据：
 
 ```bash
 npm run data:update
@@ -150,9 +161,8 @@ npm run build
 sudo systemctl restart rocom-egg-predictor
 ```
 
-Docker 更新：
+Docker 部署的话直接：
 
 ```bash
-npm run data:update
 docker compose up -d --build
 ```

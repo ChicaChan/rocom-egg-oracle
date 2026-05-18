@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Update data
+      - name: Build & validate data
         run: npm run data:update
 
       - name: Typecheck
@@ -38,6 +38,14 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Upload data reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-reports
+          path: scripts/reports/
+          retention-days: 14
 
   data-sync:
     needs: verify
@@ -65,10 +73,10 @@ jobs:
 
       - name: Commit changes if any
         run: |
-          if ! git diff --exit-code data/pets.json; then
+          if ! git diff --exit-code data/pets.json data/pets.meta.json; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/pets.json
-            git commit -m "chore: 自动同步最新孵蛋数据"
+            git add data/pets.json data/pets.meta.json scripts/reports/
+            git commit -m "chore(data): auto-sync from luodan"
             git push
           fi
