@@ -1,16 +1,19 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "洛克王国世界孵蛋预测工具 | Rocom Egg Oracle",
-  description: "输入精灵蛋尺寸和重量，反查可能孵出的洛克王国世界精灵。基于公开孵蛋区间数据，支持严格匹配与 R 值排序。",
+  title: "Rocom Egg Oracle · 洛克王国世界孵蛋反查",
+  description:
+    "输入精灵蛋尺寸和重量，反查可能孵出的《洛克王国：世界》精灵。基于公开孵蛋区间的启发式匹配工具。",
   metadataBase: new URL("https://rocom.eu.cc"),
   robots: "index, follow",
   alternates: { canonical: "https://rocom.eu.cc" },
   icons: { icon: "/og-image.png" },
   openGraph: {
-    title: "洛克王国世界孵蛋预测工具",
-    description: "输入精灵蛋尺寸和重量，反查可能孵出的精灵。",
+    title: "Rocom Egg Oracle · 洛克王国世界孵蛋反查",
+    description: "输入蛋尺寸和重量，反查可能孵出的精灵",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
@@ -19,24 +22,28 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#e2722d",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fbf4e8" },
+    { media: "(prefers-color-scheme: dark)", color: "#1c1a17" },
+  ],
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="zh-CN" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark')}})()`,
-          }}
-        />
-      </head>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster richColors position="top-center" />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

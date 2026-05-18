@@ -12,3 +12,6 @@ yarn-error.log*
 pnpm-debug.log*
 .vercel/
 .DS_Store
+scripts/.cache/
+playwright-report/
+test-results/
