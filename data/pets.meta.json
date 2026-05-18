@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "generatedAt": "2026-05-18T05:09:03.687Z",
+  "totalCount": 322,
+  "sources": {
+    "legacy": {
+      "lastFetchedAt": "2026-05-18T05:09:03.687Z",
+      "stale": false
+    },
+    "luodan": {
+      "lastFetchedAt": "2026-05-18T05:09:03.687Z",
+      "stale": false
+    }
+  },
+  "qualityBreakdown": {
+    "verified": 0,
+    "single-source": 283,
+    "user-reported": 0,
+    "inferred": 39
+  }
+}

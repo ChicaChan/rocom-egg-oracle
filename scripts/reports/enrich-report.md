@@ -1,0 +1,131 @@
+# Enrich Report
+
+生成时间：2026-05-18T05:09:03.636Z
+
+## 概况
+
+- 现有 pets.json 条目：**322**
+- 灵蛋所 worker.js 提取：**358**
+- 匹配成功：**283** (87.9%)
+- 未匹配（pets.json 有但灵蛋所无）：**39**
+- 灵蛋所多出（待后期补充蛋区间）：**75**
+
+## 未匹配的现有精灵
+
+- 蹦蹦果
+- 波普鹿
+- 彩虹独角兽
+- 迪莫
+- 恶魔狼王
+- 风暴战犬
+- 光纤兽
+- 黑猫密探
+- 幻影荆棘
+- 疾光千兽
+- 祭礼巨像
+- 里奥
+- 烈火战神
+- 灵羽勇士
+- 龙息帕尔
+- 迷嶂布莱克
+- 女王蜂
+- 帕尔萨斯
+- 奇丽果
+- 奇梦咪
+- 棋契陛下
+- 千棘海针
+- 权杖-Ⅱ
+- 权杖-Ⅴ
+- 绒绒
+- 绒仙子
+- 神谕鲨
+- 圣剑骑士
+- 圣水守护
+- 圣羽翼王
+- 霜翼领主
+- 犀角鸟
+- 小帕尔
+- 小绒茧
+- 雪影冰灵
+- 鸭吉吉国王
+- 叶冕魔力猫
+- 伊兰龙
+- 钻石蜗
+
+## 灵蛋所独有的精灵（仅元数据，缺蛋区间）
+
+- 鸭吉吉 (id=19, pinyin=yajiji_shouling)
+- 板板壳 (id=21, pinyin=banbanke)
+- 咔咔壳 (id=23, pinyin=kakake)
+- 水泡壳 (id=25, pinyin=shuipaoke)
+- 雪绒鸟 (id=30, pinyin=xuerongniao_dong)
+- 冬羽雀 (id=34, pinyin=dongyuque)
+- 岚鸟 (id=38, pinyin=lanniao)
+- 石肤蜥 (id=49, pinyin=huociyanxiyi)
+- 石刺蜥 (id=51, pinyin=conglinluxiyi)
+- 石冠王蜥 (id=53, pinyin=shihuacixiyi)
+- 化蝶 (id=65, pinyin=huadie_miaomiao)
+- 晶石蜗 (id=76, pinyin=jingshiwo_yidi1)
+- 丢丢 (id=89, pinyin=diudiu)
+- 卡卡虫 (id=92, pinyin=kakachong)
+- 卡瓦重 (id=95, pinyin=kawachong)
+- 暗影灵面 (id=107, pinyin=youlinglian_biyan)
+- 幽冥眼 (id=109, pinyin=youmingzhiyan_biyan)
+- 梦游 (id=111, pinyin=menhyou)
+- 梦悠悠 (id=113, pinyin=mengyouyou)
+- 蹦蹦种子 (id=121, pinyin=bengbengzhongzi_caiyuqiu)
+- 蹦蹦草 (id=125, pinyin=bengbengcao_caiyuqiu)
+- 蹦蹦花 (id=129, pinyin=bengbenghua_caiyuqiu)
+- 海盔虫 (id=146, pinyin=haikuichong)
+- 刺盔虫 (id=148, pinyin=cikuichong)
+- 千棘盔 (id=150, pinyin=qianjikui)
+- 小星光 (id=158, pinyin=xiaoxingguang)
+- 星光狮 (id=160, pinyin=xingguangsh)
+- 旋叶虫 (id=201, pinyin=xuanyanchong)
+- 蓬叶虫 (id=203, pinyin=pengyechong)
+- 风滚暮虫 (id=205, pinyin=fenggunmuchong)
+- 权杖-V (id=232, pinyin=quanzhagn2)
+- 小狮鹫 (id=252, pinyin=xiaoshijiu_gaoshan)
+- 神圣狮鹫 (id=254, pinyin=shenshengshijiu_gaoshan)
+- 皇家狮鹫 (id=256, pinyin=huangjiashijiu_gaoshan)
+- 棋棋 (id=286, pinyin=qiqi)
+- 棋骑士 (id=288, pinyin=qiqishi)
+- 棋齐垒 (id=290, pinyin=qiqilei)
+- 棋祈督 (id=292, pinyin=qiqidu)
+- 棋绮后 (id=294, pinyin=qiqihou)
+- 古钟蛇 (id=323, pinyin=guzhongshe)
+- 寒音蛇 (id=325, pinyin=hanyinshe)
+- 海枝枝 (id=330, pinyin=haizhizhi_bilanshanhu)
+- 刺轮砣 (id=356, pinyin=ciluntuo_yidi)
+- 月亮砣 (id=358, pinyin=yueliangtuo_yidi)
+- 乌达 (id=375, pinyin=wuda_yidi)
+- 迷你乌 (id=377, pinyin=miniwu_yidi)
+- 乌拉塔 (id=379, pinyin=wulata_yidi)
+- 地鼠 (id=404, pinyin=dishu_xushui)
+- 遁鼠 (id=406, pinyin=dunshu_xushui)
+- 遁地鼠 (id=408, pinyin=dundishu_xushui)
+- 栗鼠 (id=473, pinyin=dishu)
+- 壳栗丝鼠 (id=474, pinyin=keliji)
+- 牵线木偶 (id=475, pinyin=qianjikui)
+- 帅帅魔偶 (id=476, pinyin=shuaishuaimoou)
+- 呼拉猫 (id=477, pinyin=jianfeimao)
+- 增肌猫 (id=478, pinyin=jiroumao)
+- 健猫教练 (id=479, pinyin=baolizhanmao)
+- 齿轮小子 (id=480, pinyin=ciluntuo)
+- 机甲小子 (id=481, pinyin=jixiefangfang)
+- 不咕钟 (id=482, pinyin=buguzhong)
+- 溯源钟 (id=483, pinyin=suyuanzhong)
+- 多灵 (id=487, pinyin=duoguding)
+- 多灵主 (id=488, pinyin=emolangzhu)
+- 瑰眼仔 (id=489, pinyin=xiaoye)
+- 耳翎瑰魅 (id=490, pinyin=yexiao)
+- 邪眼巨魔 (id=491, pinyin=yejumo)
+- 卡波 (id=492, pinyin=abu)
+- 卡拉波斯 (id=493, pinyin=hunshuifangchui)
+- 星云旅者 (id=494, pinyin=xingguangsh)
+- 格斗小五 (id=495, pinyin=gedouxiaoliu)
+- 格斗小六 (id=496, pinyin=gedouxiaoliu)
+- 格斗小八 (id=497, pinyin=gedouxiaoba)
+- 烈钻鸟 (id=498, pinyin=liezuanniao)
+- 长尾火鸟 (id=499, pinyin=changweihuoniao)
+- 火羽 (id=500, pinyin=huoyu)
