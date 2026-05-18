@@ -132,6 +132,18 @@ export function predictEgg(
 
 function filterByOptions(pets: PetEggRange[], input: PredictInput): PetEggRange[] {
   return pets.filter((pet) => {
+    if (input.eggType !== undefined && input.eggType !== "all") {
+      // 生成数据会把可筛选来源统一映射到 eggTypes，过滤时只认这个字段。
+      if (input.eggType === null) {
+        // 当前在册精灵筛选：只保留映射为 null 的主数据集合。
+        if (!pet.eggTypes.includes(null)) {
+          return false;
+        }
+      } else if (!pet.eggTypes.includes(input.eggType)) {
+        return false;
+      }
+    }
+
     if (
       input.hatchSeconds &&
       input.hatchSeconds !== "all" &&

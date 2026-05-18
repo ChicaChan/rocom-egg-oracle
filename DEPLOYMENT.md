@@ -140,7 +140,7 @@ curl http://your-domain.com/api/health
 
 ## 6. 数据更新
 
-项目默认只导入 RocomUID `breeding.json` 中带 `random_eggs_group` 的当前随机蛋池记录，并在更新时把当前蛋池精灵图片同步到 `public/pets/`。
+项目默认从 BWIKI “精灵图鉴” 页面提取正式服精灵，并在更新时把对应精灵图片同步到 `public/pets/`。
 
 手动更新：
 

@@ -2,7 +2,6 @@
 
 import petsData from "@/data/pets.json";
 import {
-  formatHatchTime,
   getEggWeightClassLabel,
   predictEgg,
 } from "@/src/lib/predict";
@@ -20,10 +19,6 @@ import {
 } from "react";
 
 const pets = petsData as PetEggRange[];
-
-const hatchOptions = Array.from(
-  new Set(pets.map((pet) => pet.hatchSeconds).filter((value): value is number => Boolean(value))),
-).sort((a, b) => a - b);
 
 const dataUpdatedAt = pets[0]?.sourceUpdatedAt
   ? new Date(pets[0].sourceUpdatedAt).toLocaleString("zh-CN")
@@ -52,12 +47,6 @@ function HomeContent() {
     const n = Number(v);
     if (v && !Number.isNaN(n) && n > 0 && n <= 100) return v;
     return "";
-  });
-  const [hatchSeconds, setHatchSeconds] = useState<number | "all">(() => {
-    const hatch = searchParams.get("hatch");
-    const n = Number(hatch);
-    if (hatch && !Number.isNaN(n) && hatchOptions.includes(n)) return n;
-    return "all";
   });
   const [topN, setTopN] = useState(() => {
     const top = searchParams.get("top");
@@ -96,25 +85,23 @@ function HomeContent() {
       const params = new URLSearchParams();
       if (sizeM) params.set("size", sizeM);
       if (weightKg) params.set("weight", weightKg);
-      if (hatchSeconds !== "all") params.set("hatch", String(hatchSeconds));
       if (topN !== 12) params.set("top", String(topN));
       if (weightClass !== "all") params.set("class", weightClass);
       const qs = params.toString();
       router.replace(qs ? `?${qs}` : window.location.pathname, { scroll: false });
     }, 300);
     return () => clearTimeout(debounceRef.current);
-  }, [sizeM, weightKg, hatchSeconds, topN, weightClass, router]);
+  }, [sizeM, weightKg, topN, weightClass, router]);
 
   const result = useMemo(
     () =>
       predictEgg(pets, {
         sizeM: Number(deferredSizeM),
         weightKg: Number(deferredWeightKg),
-        hatchSeconds,
         topN,
         eggWeightClass: weightClass,
       }),
-    [deferredSizeM, deferredWeightKg, hatchSeconds, topN, weightClass],
+    [deferredSizeM, deferredWeightKg, topN, weightClass],
   );
 
   const canShowResults = sizeM.trim() !== "" || weightKg.trim() !== "";
@@ -172,22 +159,6 @@ function HomeContent() {
                 <span className="unit">kg</span>
               </div>
             </label>
-            <label className="field" htmlFor="hatch">
-              <span className="fieldLabel">孵化时间</span>
-              <select
-                id="hatch"
-                name="hatch"
-                value={hatchSeconds}
-                onChange={(e) =>
-                  setHatchSeconds(e.target.value === "all" ? "all" : Number(e.target.value))
-                }
-              >
-                <option value="all">全部</option>
-                {hatchOptions.map((s) => (
-                  <option key={s} value={s}>{formatHatchTime(s)}</option>
-                ))}
-              </select>
-            </label>
             <label className="field" htmlFor="weightClass">
               <span className="fieldLabel">重量类别</span>
               <select
@@ -215,9 +186,7 @@ function HomeContent() {
                 <option value={20}>Top 20</option>
               </select>
             </label>
-            <div className="poolBadge">
-              当前随机蛋池 · {result.stats.totalRecords} 条记录
-            </div>
+            <div className="poolBadge">仅展示正式服精灵 · {result.stats.totalRecords} 条记录</div>
             <div className="examples">
               <button type="button" onClick={() => fillExample("0.35", "7.45")}>
                 0.35m / 7.45kg
@@ -234,7 +203,7 @@ function HomeContent() {
 
         <div className="statsRow" aria-label="数据统计">
           <div className="statChip">
-            <span className="statChipLabel">随机蛋池</span>
+            <span className="statChipLabel">蛋记录</span>
             <span className="statChipValue">{result.stats.totalRecords}</span>
           </div>
           <div className="statChip">
@@ -245,9 +214,6 @@ function HomeContent() {
             <span className="statChipLabel">筛选池</span>
             <span className="statChipValue">{result.stats.filteredRecords}</span>
           </div>
-          {hatchSeconds !== "all" && (
-            <span className="filterHint">已按 {formatHatchTime(hatchSeconds)} 筛选</span>
-          )}
           {weightClass !== "all" && (
             <span className="filterHint">已按 {getEggWeightClassLabel(weightClass)} 筛选</span>
           )}
@@ -329,8 +295,8 @@ function HomeContent() {
         <section className="panel notes">
           <h2>算法与数据说明</h2>
           <p>
-            数据来源于公开仓库 RocomUID，默认只导入带 <code>random_eggs_group</code> 的当前随机蛋池记录。
-            更新时间：{dataUpdatedAt}。活动池或版本更新可能导致实际结果不同。
+            数据来源已切换为 BWIKI 精灵图鉴，并从对应精灵页提取身高与体重区间。当前仅保留图鉴确认存在的正式服精灵。更新时间：
+            {dataUpdatedAt}。若正式服版本更新但图鉴未同步，结果仍可能短暂滞后。
           </p>
         </section>
       </main>
@@ -463,8 +429,14 @@ function CandidateList({
           <div className="rank">{index + 1}</div>
           <PetImage candidate={candidate} />
           <div className="petInfo">
-            <span className="petName">{candidate.pet.name}</span>
-            <span className="petMeta">{formatHatchTime(candidate.pet.hatchSeconds)}</span>
+            <div className="petName" style={{ overflow: "visible", textOverflow: "unset", whiteSpace: "normal" }}>
+              <span>{candidate.pet.name}</span>
+            </div>
+            <div className="eggTypeTags">
+              {candidate.pet.eggTypeLabel.split(" / ").map((tag) => (
+                <span key={tag} className="eggTypeTag">{tag}</span>
+              ))}
+            </div>
           </div>
           <div className="ranges">
             <span>尺寸 {candidate.pet.sizeMinM}–{candidate.pet.sizeMaxM} m</span>
@@ -482,10 +454,20 @@ function CandidateList({
 
 function PetImage({ candidate }: { candidate: PredictCandidate }) {
   const [src, setSrc] = useState(candidate.pet.imagePath);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     setSrc(candidate.pet.imagePath);
+    setFailed(false);
   }, [candidate.pet.imagePath]);
+
+  if (failed) {
+    return (
+      <div className="petImg petImgFallback" aria-label={candidate.pet.name}>
+        🥚
+      </div>
+    );
+  }
 
   return (
     <img
@@ -494,10 +476,7 @@ function PetImage({ candidate }: { candidate: PredictCandidate }) {
       alt={candidate.pet.name}
       loading="lazy"
       onError={() => {
-        const fallbackSrc = `/api/pet-image?name=${encodeURIComponent(candidate.pet.name)}`;
-        if (src !== fallbackSrc) {
-          setSrc(fallbackSrc);
-        }
+        setFailed(true);
       }}
     />
   );

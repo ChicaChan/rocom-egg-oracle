@@ -1,49 +1,44 @@
+import petsData from "@/data/pets.json";
 import { NextRequest, NextResponse } from "next/server";
 
-const CDN_BASE = "https://jp.qxqx.cf/RocomUID/resource/rocomicon";
-const MAX_SIZE = 1024 * 1024;
+type PetImageRecord = {
+  name: string;
+  petId: number;
+  imagePath: string;
+};
+
+const pets = petsData as PetImageRecord[];
 
 export async function GET(request: NextRequest) {
-  const name = request.nextUrl.searchParams.get("name");
-  if (!name) {
-    return NextResponse.json({ error: "missing name" }, { status: 400 });
+  const name = request.nextUrl.searchParams.get("name")?.trim();
+  const petId = request.nextUrl.searchParams.get("petId")?.trim();
+
+  if (!name && !petId) {
+    return NextResponse.json({ error: "missing name or petId" }, { status: 400 });
   }
 
-  const url = `${CDN_BASE}/${encodeURIComponent(name)}.png`;
-
-  try {
-    const res = await fetch(url, {
-      signal: AbortSignal.timeout(8000),
-    });
-
-    if (!res.ok) {
-      return NextResponse.json({ error: "not found" }, { status: 404 });
+  const pet = pets.find((item) => {
+    if (petId && String(item.petId) === petId) {
+      return true;
     }
 
-    const contentLength = res.headers.get("content-length");
-    if (contentLength && parseInt(contentLength, 10) > MAX_SIZE) {
-      return NextResponse.json({ error: "too large" }, { status: 502 });
+    if (name && item.name === name) {
+      return true;
     }
 
-    const contentType = res.headers.get("content-type") || "";
-    if (!contentType.startsWith("image/")) {
-      return NextResponse.json({ error: "not an image" }, { status: 502 });
-    }
+    return false;
+  });
 
-    const body = await res.arrayBuffer();
-    if (body.byteLength > MAX_SIZE) {
-      return NextResponse.json({ error: "too large" }, { status: 502 });
-    }
-
-    return new NextResponse(body, {
-      status: 200,
-      headers: {
-        "Content-Type": contentType,
-        "Cache-Control": "public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400",
-        "CDN-Cache-Control": "public, max-age=604800",
-      },
-    });
-  } catch {
-    return NextResponse.json({ error: "fetch failed" }, { status: 502 });
+  if (!pet) {
+    return NextResponse.json({ error: "not found" }, { status: 404 });
   }
+
+  const target = new URL(pet.imagePath, request.nextUrl.origin);
+  return NextResponse.redirect(target, {
+    status: 307,
+    headers: {
+      "Cache-Control": "public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400",
+      "CDN-Cache-Control": "public, max-age=604800",
+    },
+  });
 }

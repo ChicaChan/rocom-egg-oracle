@@ -11,8 +11,16 @@ export type PetEggRange = {
   weightMinKg: number;
   weightMaxKg: number;
   hatchSeconds?: number;
+  preciousEggType: number | null;
+  /** All unique precious_egg_type values from deduplicated records */
+  eggTypes: Array<number | null>;
+  eggTypeLabel: string;
+  isRideEgg: boolean;
+  form: string | null;
+  petBondName: number | null;
+  closeLevel: number | null;
   eggWeightClasses: EggWeightClass[];
-  isCurrentRandomPool: boolean;
+  hasRandomEggsGroup: boolean;
   source: string;
   sourceUpdatedAt: string;
 };
@@ -21,6 +29,7 @@ export type PredictInput = {
   sizeM: number;
   weightKg: number;
   topN?: number;
+  eggType?: number | null | "all";
   hatchSeconds?: number | "all";
   eggWeightClass?: EggWeightClass | "all";
 };
