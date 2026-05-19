@@ -156,24 +156,15 @@ export function CandidateCard({ candidate, rank, variant }: CandidateCardProps) 
 
       {/* 数据来源徽标（底部） */}
       <div className="text-muted-foreground flex flex-wrap items-center gap-2 border-t px-4 pt-3 text-[10px]">
-        <span>来源：</span>
-        {pet.sources.map((s) => (
-          <Badge key={s.name} variant="outline" className="text-[10px]">
-            {s.name === "luodan"
-              ? "灵蛋所"
-              : s.name === "bwiki"
-                ? "BWIKI"
-                : s.name === "community"
-                  ? "玩家"
-                  : "迁移"}
-            {" · "}
-            {s.confidence === "verified"
-              ? "已验证"
-              : s.confidence === "single"
-                ? "单源"
-                : "上报"}
+        {pet.dataQuality === "verified" ? (
+          <Badge variant="success" className="text-[10px]">
+            ✓ 已验证
           </Badge>
-        ))}
+        ) : (
+          <Badge variant="outline" className="text-[10px]">
+            ~ 估算
+          </Badge>
+        )}
         <span className="ml-auto">{dataQualityLabel(pet)}</span>
       </div>
     </Card>

@@ -14,10 +14,10 @@ export function petDisplayName(pet: Pet): string {
 }
 
 const QUALITY_LABEL: Record<Pet["dataQuality"], string> = {
-  verified: "双源验证",
+  verified: "灵蛋所详情页",
   "single-source": "单源",
   "user-reported": "玩家上报",
-  inferred: "迁移自旧版",
+  inferred: "成体 × 0.42 估算",
 };
 
 export function dataQualityLabel(pet: Pet): string {
