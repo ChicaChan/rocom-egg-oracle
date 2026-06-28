@@ -1,10 +1,10 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-06-27T06:09:56.352Z",
+  "generatedAt": "2026-06-28T06:45:43.562Z",
   "totalCount": 326,
   "sources": {
     "luodan": {
-      "lastFetchedAt": "2026-06-27T06:09:56.352Z",
+      "lastFetchedAt": "2026-06-28T06:45:43.562Z",
       "stale": false
     }
   },
